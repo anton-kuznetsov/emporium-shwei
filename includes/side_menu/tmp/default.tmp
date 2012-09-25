@@ -1,0 +1,36 @@
+<div class="block mageside-menu">
+	<div class="block-title">
+		<strong><span><span class="color">Каталог</span></span></strong>
+	</div>
+	<div class="block-content">
+<?php
+
+	foreach ($data as $level1) {
+
+?>
+		<?php echo $level1['title']; ?>
+		<div class="mageside-menu-toggle-button"></div>
+		<div class="mageside-menu-toggle-container">
+			<ul>
+<?php
+
+		foreach ($level1['items'] as $level2) {
+
+?>
+			<li>
+				<?php echo $level2; ?>
+			</li>
+<?php
+
+		}
+
+?>
+			</ul>
+		</div>
+<?php
+
+	}
+
+?>
+	</div>
+</div>

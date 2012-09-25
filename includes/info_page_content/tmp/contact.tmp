@@ -1,0 +1,59 @@
+<div class="page-title">
+    <h1><span class="color">Контакты</span></h1>
+</div>
+<div id="info" class="additional tab_content info_page">
+	<h3>Контакты</h3>
+	<table class="data-table" id="product-attribute-specs-table">
+		<col width="25%" />
+		<col />
+		<tbody>
+			<tr>
+				<th class="label">Телефон</th>
+				<td class="data">(8352) 63-82-52</td>
+			</tr>
+			<tr>
+				<th class="label">ICQ</th>
+				<td class="data">563-157-687</td>
+			</tr>
+			<tr>
+				<th class="label">Skype</th>
+				<td class="data">kilowad</td>
+			</tr>
+			<tr>
+				<th class="label">E-mail</th>
+				<td class="data">shwei21@ya.ru</td>
+			</tr>
+		</tbody>
+	</table>
+	<br />
+	<h3>Юридическое лицо</h3>
+	<table class="data-table" id="product-attribute-specs-table">
+		<col width="25%" />
+		<col />
+		<tbody>
+			<tr>
+				<th class="label">Название организации</th>
+				<td class="data">ИП Васильева Ирина Николаевна</td>
+			</tr>
+			<tr>
+				<th class="label">ОГРНИП</th>
+				<td class="data">305212803500053</td>
+			</tr>
+			<tr>
+				<th class="label">ИНН</th>
+				<td class="data">212906110992</td>
+			</tr>
+			<tr>
+				<th class="label">Адрес</th>
+				<td class="data">428024, Россия, Чувашская Республика, г. Чебоксары, пр. Мира, 90</td>
+			</tr>
+		</tbody>
+	</table>
+
+<script type="text/javascript">
+
+	decorateTable('product-attribute-specs-table')
+
+</script>
+
+</div>

@@ -1,0 +1,40 @@
+<div class="page-title">
+    <h1><? echo $html_title_page; ?></h1>
+</div>
+<div class="article-category">
+	<ul class="list-articles">
+
+<?php
+
+	foreach ($data['articles'] as $item) {
+
+?>
+
+		<li class="item">
+			<div class="article-container">
+				<div class="article-info">
+					<h3>
+						<a href="<?php Article_UI::href(array('id' => $item['id'])); ?>" title="<?php echo $item['title']; ?>"><?php echo $item['title']; ?></a>
+					</h3>
+					<p class="product-desc truncate_list_desc"><?php echo $item['anons']; ?></p>
+					<span class="addto"><a href="<?php Article_UI::href(array('id' => $item['id'])); ?>" title="<?php echo $item['label']; ?>">Подробнее</a></span>
+				</div>
+				<div class="clearfloat"></div>
+			</div>
+		</li>
+
+<?php
+
+	}
+
+	// Восстановление 
+
+	$this->href_params = array (
+		array ( 'name' => 't',                   'value' => $_REQUEST ['t'] ),
+		array ( 'name' => 'id_article_category', 'value' => $_REQUEST ['id_article_category'] ),
+	);
+
+?>
+
+	</ul>
+</div>
