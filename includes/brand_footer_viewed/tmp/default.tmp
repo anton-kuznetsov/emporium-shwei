@@ -1,0 +1,25 @@
+<div class="footer-viewed-wrapper">
+	<div class="footer-viewed block">
+    	<div class="footer-viewed-title block-title">
+        	<strong><?php echo $this->title; ?></strong>
+    	</div>
+    	<div class="footer-viewed-content footer-viewed-content-brands">
+        	<ol id="recently-viewed-items" class="block-related">
+
+<?php
+	foreach ($data as $item) {
+?>
+
+		<li class="item">
+			<a href="<?php Brand_UI::href(array( 'id_brand' => $item['id_brand'] )); ?>" title="<?php echo $item['label_brand']; ?>" class="brand-image"><img src="<?php echo $item['href_image_50_gray']; ?>" height="40" alt="<?php echo $item['label_brand']; ?>" /></a>
+		</li>
+
+<?php
+	}
+?>
+
+			</ol>
+			<div class="clearfloat"></div>
+		</div>
+	</div>
+</div>

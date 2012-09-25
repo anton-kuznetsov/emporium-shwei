@@ -1,0 +1,25 @@
+<div class="footer-viewed-wrapper">
+	<div class="footer-viewed block">
+    	<div class="footer-viewed-title block-title">
+        	<strong><?php echo $this->title; ?></strong>
+    	</div>
+    	<div class="footer-viewed-content">
+        	<ol id="recently-viewed-items" class="block-related">
+<?php
+
+	foreach ($data as $item) {
+
+?>
+		<li class="item">
+			<a href="<?php echo $item['href']; ?>" title="<?php echo $item['title']; ?>" class="footer-scroller-item-image"><img src="<?php echo $item['image_src']; ?>" width="50" height="50" alt="<?php echo $item['title']; ?>" /></a>
+		</li>
+<?php
+
+	}
+
+?>
+			</ol>
+			<div class="clearfloat"></div>
+		</div>
+	</div>
+</div>

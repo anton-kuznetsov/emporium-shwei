@@ -1,0 +1,17 @@
+<div class="rokmage-footer-inner-panel">
+	<h3><span class="color">Самые</span> популярные</h3>
+	<ul>
+<?php
+
+	foreach ($data as $item) {
+
+?>
+		<li class="footer_truncate">
+			<a href="<?php Product_UI::href(array( 'id_product' => $item['id'] )); ?>" title="<?php echo $item['label']; ?>"><?php echo $item['label']; ?></a></li>
+<?php
+
+	}
+
+?>
+    </ul>
+</div>

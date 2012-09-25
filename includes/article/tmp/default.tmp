@@ -1,0 +1,9 @@
+<div class="article">
+
+	<div class="page-title-article">
+	    <h1><? echo $html_title_page; ?></h1>
+	</div>
+
+	<? echo $data['text']; ?>
+
+</div>
