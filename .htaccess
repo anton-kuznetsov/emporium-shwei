@@ -4,17 +4,24 @@ DirectoryIndex index.php
 
 RewriteEngine On # должно быть включено (on) для работы RewriteRule
 
-RewriteBase /
+#
+
+# На сайте
+# RewriteBase /
+# На компьютере
+RewriteBase /shwei/
+
+#
 
 RewriteRule ^product_categories/(.*)\.html$  index.php?t=category&id_category=$1 [NC,QSA,L]
 
-RewriteRule ^products/(.*)\.html$            index.php?t=product&id_product=$1 [L]
+RewriteRule ^products/(.*)\.html$            index.php?t=product&id_product=$1 [NC,QSA,L]
 
-RewriteRule ^articles/(.*)\.html$            index.php?t=page&label=$1 [L]
+RewriteRule ^articles/(.*)\.html$            index.php?t=page&label=$1 [NC,QSA,L]
 
-RewriteRule ^brands/(.*)\.html$              index.php?t=brand&id_brand=$1 [L]
+RewriteRule ^brands/(.*)\.html$              index.php?t=brand&id_brand=$1 [NC,QSA,L]
 
-RewriteRule ^cart\.html?(.*)$                index.php?t=cart&$1 [L]
+RewriteRule ^cart\.html?(.*)$                index.php?t=cart&$1 [NC,QSA,L]
 
 RewriteRule ^search\.html$                   index.php?t=search [NC,QSA,L]
 

@@ -26,8 +26,9 @@
 			<div class="page">
 				<div class="header-container z2">    
 
-					<!-- Module_0 : Top Header -->
-					<?php echo ( $this->modules[0] ? $this->modules[0]->render() : '' ); ?>
+					<!-- Module -->
+					<?php $index_module = 0; ?>
+					<?php echo ( $this->modules[$index_module] ? $this->modules[$index_module]->render() : '' ); $index_module++; ?>
 
 				</div>
 				<!--  -->
@@ -76,8 +77,8 @@
 							<div class="top-links">
 								<div class="links-container">
 
-									<!-- Module_1 : Button Cart -->
-									<?php echo ( $this->modules[1] ? $this->modules[1]->render() : '' ); ?>
+									<!-- Module -->
+									<?php echo ( $this->modules[$index_module] ? $this->modules[$index_module]->render() : '' ); $index_module++; ?>
 
 									<!--
 					                <ul class="links">
@@ -171,8 +172,8 @@
 								<div class="clearfloat">
 								</div>                                                
 
-								<!-- Module_2 : -->
-								<?php echo ( $this->modules[2] ? $this->modules[2]->render() : '' ); ?>                                                
+								<!-- Module -->
+								<?php echo ( $this->modules[$index_module] ? $this->modules[$index_module]->render() : '' ); $index_module++; ?>                                                
 
 							</div>
 							<div class="col-main-end"></div>
@@ -182,30 +183,25 @@
 
                 		<div class="col-left sidebar">
 
-							<!-- Module_3 : Left Side Menu -->
-							<?php echo ( $this->modules[3] ? $this->modules[3]->render() : '' ); ?>
-
-							<!-- Module_4 : Left Side Menu -->
-							<?php echo ( $this->modules[4] ? $this->modules[4]->render() : '' ); ?>
-
-							<!-- Module_5 : Left Cart -->
-							<?php echo ( $this->modules[5] ? $this->modules[5]->render() : '' ); ?>
-
-							<!-- Module_6 : Left Newsletter -->
-							<?php echo ( $this->modules[6] ? $this->modules[6]->render() : '' ); ?>
-
-							<!-- Module_7 : Left Compare Products -->
-							<?php echo ( $this->modules[7] ? $this->modules[7]->render() : '' ); ?>
+							<!-- Module -->
+							<?php echo ( $this->modules[$index_module] ? $this->modules[$index_module]->render() : '' ); $index_module++; ?>
+							<!-- Module -->
+							<?php echo ( $this->modules[$index_module] ? $this->modules[$index_module]->render() : '' ); $index_module++; ?>
+							<!-- Module -->
+							<?php echo ( $this->modules[$index_module] ? $this->modules[$index_module]->render() : '' ); $index_module++; ?>
+							<!-- Module -->
+							<?php echo ( $this->modules[$index_module] ? $this->modules[$index_module]->render() : '' ); $index_module++; ?>
+							<!-- Module -->
+							<?php echo ( $this->modules[$index_module] ? $this->modules[$index_module]->render() : '' ); $index_module++; ?>
 
 						</div>
 					</div>
 				</div>
 
-				<!-- Module_8 : Footer. Последние просмотренные товары -->
-				<?php echo ( $this->modules[8] ? $this->modules[8]->render() : '' ); ?>
-
-				<!-- Module_9 : Footer. Брэнды -->
-				<?php echo ( $this->modules[9] ? $this->modules[9]->render() : '' ); ?>
+				<!-- Module -->
+				<?php echo ( $this->modules[$index_module] ? $this->modules[$index_module]->render() : '' ); $index_module++; ?>
+				<!-- Module -->
+				<?php echo ( $this->modules[$index_module] ? $this->modules[$index_module]->render() : '' ); $index_module++; ?>
 
 <script type="text/javascript">
 
@@ -244,14 +240,12 @@
 
 						<div id="rokmage-footer-lists">
 
-							<!-- Module_10 : Footer -->
-							<?php echo ( $this->modules[10] ? $this->modules[10]->render() : '' ); ?>
-
-							<!-- Module_11 : Footer -->
-							<?php echo ( $this->modules[11] ? $this->modules[11]->render() : '' ); ?>
-
-							<!-- Module_12 : Footer -->
-							<?php echo ( $this->modules[12] ? $this->modules[12]->render() : '' ); ?>
+							<!-- Module -->
+							<?php echo ( $this->modules[$index_module] ? $this->modules[$index_module]->render() : '' ); $index_module++; ?>
+							<!-- Module -->
+							<?php echo ( $this->modules[$index_module] ? $this->modules[$index_module]->render() : '' ); $index_module++; ?>
+							<!-- Module -->
+							<?php echo ( $this->modules[$index_module] ? $this->modules[$index_module]->render() : '' ); $index_module++; ?>
 
 							<div id="rokmage-footer-text">
 								<h3><span class="color">Консультации</span></h3>
@@ -264,8 +258,8 @@
 
 						<div id="footer-bottom">
 
-							<!-- Module_13 : Footer -->
-							<?php echo ( $this->modules[13] ? $this->modules[13]->render() : '' ); ?>
+							<!-- Module -->
+							<?php echo ( $this->modules[$index_module] ? $this->modules[$index_module]->render() : '' ); $index_module++; ?>
 
 						</div>
 

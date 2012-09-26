@@ -303,6 +303,7 @@
 
 			$bc_data = array();
 			$bc_data["id_category"] = $__id_category;
+			$bc_data["page_type"] = $__page_type;
 
 			//
 
@@ -349,57 +350,33 @@
 		case 'search':
 
 			$p_data = array();
-
 			$p_data["q"] = $__q;
-
 			$p_data["p"] = $__p;
-
 			$p_data["limit"] = $__limit;
-
 			$p_data["order"] = $__order;
 
 			// Список подключаемых к странице модулей
 
 			$modules = array (
-
 				new TopMenu_UI(),               // Верхнее меню
-
 				new ModalCart_UI(),				// Ссылка и модальная форма Корзины
-
 				// Content
-
 				new SearchResults_UI( $p_data ),    //
-
 				// Левая колонка
-
 				new BrandSideMenu_UI(),         // Меню по брендам
-
 				new AccessoriesSideMenu_UI(),	// Меню по аксессуарам
-
 				new ColumnCart_UI(),            // Мини-таблица "Корзина"
-
 				new Newsletter_UI(),            // Регистрация на рассылку новостей по электронной почте
-
 				new ColumnCompareProducts_UI(), // Мини-таблица "Сравнение товаров"
-
 				// Подвал № 1
-
 				new ProductFooterViewed_UI(),   // Последние просмотренные товары 
-
 				new BrandFooterViewed_UI(),     // Брэнды
-
 				// Подвал № 2
-
 				new NewFooterList_UI(),         // Список "Новинки" (по дате публикации в магазине)
-
 				new BestsellerFooterList_UI(),  // Список "Самые покупаемые товары"
-
 				new PopularFooterList_UI(),     // Список "Самые популярные товары"
-
 				// Подвальное меню
-
 				new FooterMenu_UI()             // 
-
 			);
 
 			// Генератор страницы	
@@ -467,8 +444,8 @@
 				// Content
 				new Breadcrumbs_UI( Breadcrumbs_UI::BC_TYPE_ARTICLE, $a_data ), //
 				new Article_UI( $a_data ),    //
-				null,  //
-				null,    //
+				null,
+				null,
 				// Левая колонка
 				new BrandSideMenu_UI(),         // Меню по брендам
 				new AccessoriesSideMenu_UI(),	// Меню по аксессуарам
@@ -483,12 +460,11 @@
 				new BestsellerFooterList_UI(),  // Список "Самые покупаемые товары"
 				new PopularFooterList_UI(),     // Список "Самые популярные товары"
 				// Подвальное меню
-				new FooterMenu_UI()             // 		 
+				new FooterMenu_UI()             //				 
 			);
 
 			// Генератор страницы	
 			$page = new CategoryPage_UI($modules, $a_data);
-
 			break;
 
 		case 'article_category':
@@ -505,8 +481,8 @@
 				// Content
 				new Breadcrumbs_UI( Breadcrumbs_UI::BC_TYPE_ARTICLE_CATEGORY, $ac_data ), //
 				new ArticleCategory_UI( $ac_data ),    //
-				null,  //
-				null,    //
+				null,
+				null,
 				// Левая колонка
 				new BrandSideMenu_UI(),         // Меню по брендам
 				new AccessoriesSideMenu_UI(),	// Меню по аксессуарам
@@ -569,117 +545,70 @@
 		case 'brand':
 
 			$bp_data = array();
-
 			$bp_data["id_brand"] = $__id_brand;
 
 			//
 
 			$modules = array (
-
 				new TopMenu_UI(),               // Верхнее меню
-
 				new ModalCart_UI(),				// Ссылка и модальная форма Корзины
-
 				// Content
-
 				new Brand_UI( $bp_data ),       //
-
 				// Левая колонка
-
 				new BrandSideMenu_UI(),         // Меню по брендам
-
 				new AccessoriesSideMenu_UI(),	// Меню по аксессуарам
-
 				new ColumnCart_UI(),            // Мини-таблица "Корзина"
-
 				new Newsletter_UI(),            // Регистрация на рассылку новостей по электронной почте
-
 				new ColumnCompareProducts_UI(), // Мини-таблица "Сравнение товаров"
-
 				// Подвал № 1
-
 				new ProductFooterViewed_UI(),   // Последние просмотренные товары 
-
 				new BrandFooterViewed_UI(),     // Брэнды
-
 				// Подвал № 2
-
 				new NewFooterList_UI(),         // Список "Новинки" (по дате публикации в магазине)
-
 				new BestsellerFooterList_UI(),  // Список "Самые покупаемые товары"
-
 				new PopularFooterList_UI(),     // Список "Самые популярные товары"
-
 				// Подвальное меню
-
 				new FooterMenu_UI()             // 
-
 			);
 
 			// Генератор страницы	
 
-			$page = new InfoPage_UI($modules, $bp_data);
+			$page = new BrandPage_UI($modules, $bp_data);
 
 			break;
 
 		case 'create_order':
 
 			$p_data = array();
-
 			$p_data["action"] = $__action;
-
 			$p_data["id_order"] = $__id_order;
-
 			$p_data["id_cart"] = $__id_cart;
-
 			$p_data["fio"] = $__fio;
-
 			$p_data["email"] = $__email;
-
 			$p_data["phone"] = $__phone;
 
 			//
 
 			$modules = array (
-
 				new TopMenu_UI(),               // Верхнее меню
-
 				new ModalCart_UI(),				// Ссылка и модальная форма Корзины
-
 				// Content
-
 				new CreateOrder_UI( $p_data ),  //
-
 				// Левая колонка
-
 				new BrandSideMenu_UI(),         // Меню по брендам
-
 				new AccessoriesSideMenu_UI(),	// Меню по аксессуарам
-
 				new ColumnCart_UI(),            // Мини-таблица "Корзина"
-
 				new Newsletter_UI(),            // Регистрация на рассылку новостей по электронной почте
-
 				new ColumnCompareProducts_UI(), // Мини-таблица "Сравнение товаров"
-
 				// Подвал № 1
-
 				new ProductFooterViewed_UI(),   // Последние просмотренные товары 
-
 				new BrandFooterViewed_UI(),     // Брэнды
-
 				// Подвал № 2
-
 				new NewFooterList_UI(),         // Список "Новинки" (по дате публикации в магазине)
-
 				new BestsellerFooterList_UI(),  // Список "Самые покупаемые товары"
-
 				new PopularFooterList_UI(),     // Список "Самые популярные товары"
-
 				// Подвальное меню
-
 				new FooterMenu_UI()             // 
-
 			);
 
 			// Генератор страницы	

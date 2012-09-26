@@ -2,6 +2,7 @@
 
 	require_once "_pages/Page_UI.php";
 	require_once "_pages/HomePage/HomePage_UI.php";
+	require_once "_pages/BrandPage/BrandPage_UI.php";
 	require_once "_pages/CategoryPage/CategoryPage_UI.php";
 	require_once "_pages/SearchPage/SearchPage_UI.php";
 	require_once "_pages/ProductPage/ProductPage_BLLC.php";

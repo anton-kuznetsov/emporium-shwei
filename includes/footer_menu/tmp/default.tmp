@@ -1,6 +1,5 @@
 <ul class="footermenu">
-	<li class="first"><a href="/articles/service.html" title="Сервисный центр">Сервисный центр</a></li>
-	<li><a href="/articles/delivery.html" title="Доставка">Доставка</a></li>
-	<li><a href="/articles/payment.html" title="Способы оплаты">Способы оплаты</a></li>
-	<li class="last"><a href="/articles/contact.html" title="Контакты">Контакты</a></li>
+	<li class="first"><a href="<?php Article_UI::href(array('id' => 1)); ?>" title="Сервисный центр">Сервисный центр</a></li>
+	<li><a href="<?php Article_UI::href(array('id' => 2)); ?>" title="Доставка и оплата">Доставка и оплата</a></li>
+	<li class="last"><a href="<?php Article_UI::href(array('id' => 4)); ?>" title="Контакты">Контакты</a></li>
 </ul>

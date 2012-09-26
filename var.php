@@ -8,16 +8,16 @@
 	if (!eregi('(',$n) and !eregi('(',$n) and !eregi(',',$n) and !eregi('+',$n) and !eregi(':',$n) and !eregi('http',$n) and !eregi('ftp',$n) and !eregi('"',$n) and !eregi("'",$n) and !eregi('<',$n) and !eregi('>',$n) and !eregi('[',$n) and !eregi(']',$n) and !eregi('{',$n) and !eregi('}',$n)) {
 
 		// MySQL
-		$bdlogin = 'ds4497_shwei';
-		$bdpass  = 'ztnNqdEA';
+		$bdlogin = 'root';
+		$bdpass  = '';
 		$bdhost  = 'localhost';
-		$bdname  = 'ds4497_shwei';
+		$bdname  = 'shwei';
 	
 		// название сайта
 		$sitename = 'Shwei.Ru - Интернет-магазин швейных, вышивальных и вязальных машин в Чебоксарах';
 	
-		$folder_root = $_SERVER['DOCUMENT_ROOT'] . '';
-		$site_root = 'http://shwei.ru/';
+		$folder_root = $_SERVER['DOCUMENT_ROOT'] . '/shwei/';
+		$site_root = 'http://localhost/shwei/';
 	
 		$week_days_rus = array (
 			'Понедельник',

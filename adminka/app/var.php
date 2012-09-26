@@ -1,20 +1,20 @@
 <?php
 
 	// Подключение к базе MySQL
-	$db_login = 'ds4497_shwei';
-	$db_pass  = 'ztnNqdEA';
+	$db_login = 'root';
+	$db_pass  = '';
 	$db_host  = 'localhost';
-	$db_name  = 'ds4497_shwei';
+	$db_name  = 'shwei';
 
 	// URL админки
-	$site_url = 'http://shwei.ru/adminka/';
+	$site_url = 'http://localhost/shwei/adminka/';
 	// URL сайта
-	$public_site_url = 'http://shwei.ru/';
+	$public_site_url = 'http://localhost/shwei/';
 
 	// Каталог админки
-	$site_folder = $_SERVER['DOCUMENT_ROOT'] . '/adminka/';
+	$site_folder = $_SERVER['DOCUMENT_ROOT'] . '/shwei/adminka/';
 	// Каталог сайта
-	$public_site_folder = $_SERVER['DOCUMENT_ROOT'] . '';
+	$public_site_folder = $_SERVER['DOCUMENT_ROOT'] . '/shwei/';
 
 	// Заголовок
 	$site_title = 'Система управления интернет-магазином Shwei.Ru';

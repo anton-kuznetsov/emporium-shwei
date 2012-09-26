@@ -26,8 +26,8 @@ class CategoryPage_UI extends Page_UI {
 
 		switch ( $this->options['page_type'] ) {
 			case 'category':
-				$product_category_bllc = new Category_DALC();
-				$data = $product_category_bllc->GetCategory( $this->options['id_category'] );
+				$category_dalc = new Category_DALC();
+				$data = $category_dalc->GetCategory( $this->options['id_category'] );
 				break;
 			case 'article':
 				$article_bllc = new Article_BLLC();

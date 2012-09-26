@@ -10,11 +10,11 @@ class DALC {
 
 	// логин
 
-	private $db_login = 'ds4497_shwei';
+	private $db_login = 'root';
 
 	// пароль
 
-	private $db_pass = 'ztnNqdEA';
+	private $db_pass = '';
 
 	// имя хоста
 
@@ -22,7 +22,7 @@ class DALC {
 
 	// имя базы данных
 
-	private $db_name = 'ds4497_shwei';
+	private $db_name = 'shwei';
 
 
 
@@ -147,60 +147,35 @@ class DALC {
 
 
 	//--------------------------------------------------------------------------
-
 	// Получение записи из таблицы
-
-
 
 	public function SQL_SelectItem($table = NULL, $fields = NULL, $id = 0 ) {
 
-
-
 		$res = array ();
-
-
 
 		//
 
-
-
 		$fields_str = '';
-
-
 
 		if (is_null($fields)) {
 
-
-
 			$fields_str = "*";
-
-
 
 		} else {
 
-
-
 			$fields_str = "id, " . join(", ", $fields);
-
-		
 
 		}
 
-
-
 		$where = " WHERE id = " . $id;
 
-
-
 		$result = mysql_query( 
-
 			" SELECT " . $fields_str .
-
 			" FROM " . $table .
-
-			$where, $this->db );
-
-
+			$where,
+			
+			$this->db
+		);
 
 		if (!$result) {
 
@@ -208,41 +183,22 @@ class DALC {
 
 		}
 
-
-
 		if ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
-
-
 
 			$res = $row;
 
-
-
 		}
-
-
 
 		mysql_free_result($result);
 
-
-
 		//
-
-
 
 		return $res;
 
-
-
 	}
 
-
-
 	//--------------------------------------------------------------------------
-
 	// Получение списка записей из таблицы
-
-
 
 	public function SQL_SelectList($table = NULL, $fields = NULL, $where = '', $order = '', $limit = 0 ) {
 

@@ -31,7 +31,7 @@
 				<!--  -->
 				<div class="header-container z2">    
 
-					<!-- Module_0 : Top Header -->
+					<!-- Module -->
 					<?php $index_module = 0; ?>
 					<?php echo ( $this->modules[$index_module] ? $this->modules[$index_module]->render() : '' ); $index_module++; ?>
 

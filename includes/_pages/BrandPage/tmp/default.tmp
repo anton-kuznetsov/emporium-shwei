@@ -1,15 +1,15 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 	<head>
-		<title><?php echo $sitename; ?></title>
+		<title><?php echo $data['page_title']; ?></title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
 		<meta http-equiv="Expires" content="-1">
 		<meta http-equiv="Cache-Control" content="No-Cache">
 		<meta http-equiv="pragma" content="no-cache">
 		<meta name="robots" content="all">
 
-		<meta name="description" content="Интернет-магазин швейных машин Bernina, Janome, AstraLux, Elna, оверлоков и аксессуаров. Вы сможете купить швейную, вышивальную или вязальную машину с гарантией и доставкой.">
-		<meta name="keywords" content="швейные машины чебоксары, вышивальные машины чебоксары, вязальные машины чебоксары, оверлоки чебоксары, швейные машины интернет магазин, купить швейные машины, швейные машины цена">
+		<meta name="description" content="<?php echo $data['meta_desc']; ?>">
+		<meta name="keywords" content="<?php echo $data['meta_key']; ?>">
 
 		<link rel="stylesheet" type="text/css" href="<?php echo $site_root; ?>css/kinetic.css">
 		<link rel="stylesheet" type="text/css" href="<?php echo $site_root; ?>css/joomla.css">
@@ -23,12 +23,7 @@
 	<body class="cms-index-index">
 		<div class="wrapper">
 			<div class="page-top"></div>
-			<div class="page">
-				<!-- Коричневый фон для главного слайдера -->
-				<div id="color-block-2" style="height: 303px">
-					<div id="color-block-inner" style="height: 303px"></div>
-				</div>
-				<!--  -->
+			<div class="page cms-page-view">
 				<div class="header-container z2">    
 
 					<!-- Module -->
@@ -36,8 +31,6 @@
 					<?php echo ( $this->modules[$index_module] ? $this->modules[$index_module]->render() : '' ); $index_module++; ?>
 
 				</div>
-				<!--  -->
-				<div class="homepage-spacer"></div>
 				<!--  -->
 				<div class="header-container">
 				    <div class="quick-access">
@@ -170,51 +163,18 @@
 
 				<!-- End Modals -->
 
-				<!-- Module -->
-				<?php echo ( $this->modules[$index_module] ? $this->modules[$index_module]->render() : '' ); $index_module++; ?>
-
 				<div class="main-container col2-left-layout">
-
-					<!-- Module -->
-					<?php echo ( $this->modules[$index_module] ? $this->modules[$index_module]->render() : '' ); $index_module++; ?>
 
 					<div class="main">
                 		<div class="col-main">
 							<div class="container">
-								<div class="clearfloat"></div>
-								<!-- Add ContentSlider -->
-                                <!-- End ContentSlider -->
-                        		<div class="std">
 
-									<div class="bg-container">
-									    <div class="category-title page-title">
-									        <h1><span class="color">Отличный</span> выбор!</h1>
-									    </div>
-								    	<div class="grid-text">
-								        	<p>Ознакомтесь с рекомендуемыми товарами для покупки:</p>
-										</div>
+								<div class="clearfloat">
+								</div>                                                
 
-										<!-- Module -->
-										<?php echo ( $this->modules[$index_module] ? $this->modules[$index_module]->render() : '' ); $index_module++; ?>
+								<!-- Module -->
+								<?php echo ( $this->modules[$index_module] ? $this->modules[$index_module]->render() : '' ); $index_module++; ?>                                                
 
-        								<div class="clearfloat"></div>
-									</div>
-									<div class="bg-container-end"></div>
-
-<script type="text/javascript">
-
-	var $j = jQuery.noConflict();
-	$j(document).ready(function(){
-		$j(".product-info-col").each(function(){
-			var link = $j("a:eq(0)", this).attr('href');
-			$j(".rating-links a:first", this).attr("href", link + "#reviews");
-			$j(".rating-links a:last", this).attr("href", link + "#review-form");
-		});
-	});
-
-</script>
-
-								</div>
 							</div>
 							<div class="col-main-end"></div>
                 		</div>
