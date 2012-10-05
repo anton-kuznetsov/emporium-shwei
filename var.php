@@ -12,7 +12,12 @@
 		$bdpass  = 'ztnNqdEA';
 		$bdhost  = 'localhost';
 		$bdname  = 'ds4497_shwei';
-	
+
+		// Robocassa
+		$robocassa_login = 'anton_kuznetsov';
+		$robocassa_pass1 = 'FMwn81TmTy';
+		$robocassa_pass2 = '411EiH5j9S';
+
 		// название сайта
 		$sitename = 'Shwei.Ru - Интернет-магазин швейных, вышивальных и вязальных машин в Чебоксарах';
 	

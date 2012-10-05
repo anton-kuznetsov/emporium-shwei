@@ -66,8 +66,6 @@
 
 	}
 
-
-
 	if (isset($_REQUEST ["label"])) {
 
 		$__label = $_REQUEST ["label"];
@@ -254,14 +252,34 @@
 
 	}
 
+	$__robocassa_out_summ = 0;
+
+	if (isset($_REQUEST ["OutSum"])) {
+
+		$__robocassa_out_summ = $_REQUEST ["OutSum"];
+
+	}
+
+
+	$__robocassa_inv_id = 0;
+
+	if (isset($_REQUEST ["InvId"])) {
+
+		$__robocassa_inv_id = $_REQUEST ["InvId"];
+
+	}
+
+	$__robocassa_sign_value = '';
+	
+	if (isset($_REQUEST ["SignatureValue"])) {
+
+		$__robocassa_sign_value = $_REQUEST ["SignatureValue"];
+
+	}
 
 	// *** система отрисовки страниц ***
 
-
-
 	$page = NULL;
-
-
 
 	switch ($__page_type) {
 
@@ -804,6 +822,73 @@
 
 			//
 			$page->action();
+
+			//
+			break;
+
+		case 'success_payment':
+
+			$p_data = array();
+			$p_data["sum"]      = $__robocassa_out_summ;
+			$p_data["id_order"] = $__robocassa_inv_id;
+			$p_data["crc"]      = $__robocassa_sign_value;
+
+			//
+
+			$modules = array (
+				new TopMenu_UI(),               // Верхнее меню
+				new ModalCart_UI(),				// Ссылка и модальная форма Корзины
+				// Content
+				new SuccessPayment_UI( $p_data ),  //
+				// Левая колонка
+				new BrandSideMenu_UI(),         // Меню по брендам
+				new AccessoriesSideMenu_UI(),	// Меню по аксессуарам
+				new ColumnCart_UI(),            // Мини-таблица "Корзина"
+				new Newsletter_UI(),            // Регистрация на рассылку новостей по электронной почте
+				new ColumnCompareProducts_UI(), // Мини-таблица "Сравнение товаров"
+				// Подвал № 1
+				new ProductFooterViewed_UI(),   // Последние просмотренные товары 
+				new BrandFooterViewed_UI(),     // Брэнды
+				// Подвал № 2
+				new NewFooterList_UI(),         // Список "Новинки" (по дате публикации в магазине)
+				new BestsellerFooterList_UI(),  // Список "Самые покупаемые товары"
+				new PopularFooterList_UI(),     // Список "Самые популярные товары"
+				// Подвальное меню
+				new FooterMenu_UI()             //
+			);
+
+			//	
+			$page = new InfoPage_UI($modules, $p_data);
+
+			//
+			break;
+
+		case 'fail_payment':
+
+			$modules = array (
+				new TopMenu_UI(),               // Верхнее меню
+				new ModalCart_UI(),				// Ссылка и модальная форма Корзины
+				// Content
+				new FailPayment_UI(),           //
+				// Левая колонка
+				new BrandSideMenu_UI(),         // Меню по брендам
+				new AccessoriesSideMenu_UI(),	// Меню по аксессуарам
+				new ColumnCart_UI(),            // Мини-таблица "Корзина"
+				new Newsletter_UI(),            // Регистрация на рассылку новостей по электронной почте
+				new ColumnCompareProducts_UI(), // Мини-таблица "Сравнение товаров"
+				// Подвал № 1
+				new ProductFooterViewed_UI(),   // Последние просмотренные товары 
+				new BrandFooterViewed_UI(),     // Брэнды
+				// Подвал № 2
+				new NewFooterList_UI(),         // Список "Новинки" (по дате публикации в магазине)
+				new BestsellerFooterList_UI(),  // Список "Самые покупаемые товары"
+				new PopularFooterList_UI(),     // Список "Самые популярные товары"
+				// Подвальное меню
+				new FooterMenu_UI()             //
+			);
+
+			//	
+			$page = new InfoPage_UI($modules, null);
 
 			//
 			break;

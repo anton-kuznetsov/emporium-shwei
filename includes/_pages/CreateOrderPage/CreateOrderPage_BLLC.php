@@ -68,7 +68,7 @@ class CreateOrderPage_BLLC {
 
 		//
 
-		header("Location: " . CreateOrder_UI::href( array( 'action' => 'step3' ), 1));
+		header("Location: " . CreateOrder_UI::href( array( 'action' => 'step3', 'id_order' => $data['id_order'] ), 1));
 		exit;
 
 	}

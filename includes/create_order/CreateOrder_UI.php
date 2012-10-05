@@ -36,6 +36,8 @@ class CreateOrder_UI extends UI {
 	public function render() {
 
 		global $site_root;
+		global $robocassa_login;
+		global $robocassa_pass1;
 
 		$data = array ();
 
@@ -57,7 +59,7 @@ class CreateOrder_UI extends UI {
 				break;
 			case 'step3':
 				$create_order_bllc = new CreateOrder_BLLC();
-				$data = $create_order_bllc->GetData( $this->data['id_order'] );
+				$data = $create_order_bllc->GetOrderData( $this->data['id_order'] );
 				include $this->folder_class . 'tmp/step3.tmp';
 				break;
 			default:

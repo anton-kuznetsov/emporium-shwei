@@ -21,3 +21,7 @@ RewriteRule ^search\.html$                   index.php?t=search [NC,QSA,L]
 RewriteRule ^cart\.html$                     index.php?t=cart [NC,QSA,L]
 
 RewriteRule ^orders/create\.html$            index.php?t=create_order [NC,QSA,L]
+
+RewriteRule ^success_payment\.php$           index.php?t=success_payment [NC,QSA,L]
+
+RewriteRule ^fail_payment\.php$              index.php?t=fail_payment [NC,QSA,L]
