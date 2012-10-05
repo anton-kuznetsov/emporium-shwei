@@ -1,0 +1,246 @@
+<script type="text/javascript">
+
+	var $j = jQuery.noConflict();
+
+	$j(document).ready(function(){
+
+		$j(".sorter .view-mode").css("display", "none");
+		$j("span.switch_thumb").css("display", "block");
+
+		$j("span.switch_thumb").click(function () {
+
+			$j("span.switch_thumb").toggleClass("swap");
+
+			$j("ul.display").fadeOut("fast", function() {
+
+				$j(this).fadeIn("fast").toggleClass("thumb_view").toggleClass("list");
+
+				// Undo equalized heights for list
+				$j('ul.list div.product-container').css("height","auto");
+
+				// Equalize all thumb heights on switch if list view default
+				var maxHeight = 0;
+				$j('ul.thumb_view div.product-container').each(function() { maxHeight = Math.max(maxHeight, $j(this).height()); }).height(maxHeight);
+			});
+
+			$j.cookie('view_State', $j('ul.display').is('.thumb_view') ? 'list' : 'thumbs' );
+
+		});
+
+		// COOKIES
+		// view state
+		var view_State = $j.cookie('view_State');
+
+		// Set the user's selection for the viewState
+		if (view_State == 'thumbs') {
+			$j("ul.display").addClass("thumb_view");
+			$j("span.switch_thumb").addClass("swap");
+		};
+
+		if (view_State == 'list') {
+			$j("ul.display").removeClass("thumb_view");
+			$j("span.switch_thumb").removeClass("swap");
+		};
+	});
+
+</script>
+
+<script type="text/javascript">
+
+	var $j = jQuery.noConflict();
+
+	// Truncate
+	$j(function() {
+		$j('.truncate_title').truncate({max_length: 50});
+		$j('.truncate_list_desc').truncate({max_length: 230});
+	});
+
+	$j(document).ready(function(){
+
+		// Remove list class if thumbview
+		if ( $j("ul#products-list").hasClass("thumb_view") ) {
+		$j("ul#products-list").removeClass("list") };
+
+		// Equalize all thumb heights on switch if list view default
+		var maxHeight = 0;
+		$j('ul.thumb_view div.product-container').each(function() { maxHeight = Math.max(maxHeight, $j(this).height()); }).height(maxHeight);
+
+		// Undo equalized heights for list
+		$j('ul.list div.product-container').css("height","auto");
+
+	});
+
+</script>
+
+	<div class="category-products">
+		<div class="toolbar">
+			<div class="pager">
+				<p class="amount">с <?php echo $data['begin']; ?> по <?php echo $data['end']; ?>, всего <?php echo $data['product_qty']; ?></p>
+				<div class="limiter">
+					<label>По</label>
+					<select onchange="setLocation(this.value)">
+<?php
+	foreach ($limits as $limit) {
+?>
+						<option value="<?php $this->href(array('p' => 1, 'limit' => $limit)); ?>" <?php echo ($this->data['limit'] == $limit ? 'selected="selected"' : '' ); ?> ><?php echo $limit; ?></option>
+<?php
+	}
+?>
+					</select> на странице
+				</div>
+				<div class="pages">
+					<strong>Страница:</strong>
+					<ol>
+<?php
+	$i = 1;
+	while ( $i <= $page_qty ) {
+		if ($i == $this->data['p']) {
+?>
+			<li class="current"><?php echo $i; ?></li>
+<?php
+		} else {
+?>
+			<li><a href="<?php $this->href(array('p' => $i)); ?>"><?php echo $i; ?></a></li>
+<?php
+		}
+		$i++;
+	}
+?>
+						<!-- <li><a class="next" href="?p=2" title="Next"><img src="/images/i_pager-next.gif" alt="Next" class="v-middle" /></a></li> -->
+                	</ol>
+				</div>
+			</div>
+			<div class="sorter">
+				<!-- <p class="view-mode">
+					<label>View as:</label><strong title="Grid" class="grid">Grid</strong>&nbsp;<a href="?mode=list" title="List" class="list">List</a>&nbsp;
+				</p> -->
+				<div class="sort-by">
+					<label>Сортировка по</label>
+					<select onchange="setLocation(this.value)">
+<?php
+	foreach ($sorts as $sort) {
+?>
+		<option value="<?php $this->href(array('order' => $sort['name'])); ?>" <?php echo ( $this->data['order'] == $sort['name'] ? 'selected="selected"' : ''); ?>><?php echo $sort['label']; ?></option>
+<?php
+	}
+?>
+					</select>
+					<!-- <a href="?dir=desc&amp;order=position" title="Направление сортировки"><img src="/images/i_asc_arrow.gif" alt="Направление сортировки" class="v-middle" /></a> -->
+				</div>
+			</div>
+		</div>
+		<!-- -->
+		<span id="switch_thumb" class="switch_thumb switch_thumb_in_category">Переключить вид</span>
+		<ul class="display list" id="products-list">
+<?php
+	foreach ($data['items'] as $item) {
+?>
+		<li class="item">
+			<div class="product-container">
+				<div class="product-image-col">
+					<a class="product-image" href="<?php Product_UI::href(array('id_product' => $item['id'])); ?>" title="<?php echo $item['label']; ?>"><img src="<?php echo $item['href_image_90']; ?>" width="90" height="90" alt="<?php echo $item['label']; ?>" title="<?php echo $item['label']; ?>" /></a>
+					<!-- <button class="button" onclick="setLocation('<?php ShopingCart_UI::href(array( 'action' => 'add', 'id_product' => $item['id'], 'qty' => 1 ), 0, 0); ?>')"><span><span>В корзину</span></span></button> -->
+				</div>
+				<div class="product-info-col">
+					<h3 class="product-name truncate_title"><a href="<?php Product_UI::href(array('id_product' => $item['id'])); ?>" title="<?php echo $item['label']; ?>"><?php echo $item['label']; ?></a></h3>      
+					<div class="price-box">
+						<span class="regular-price" id="product-price-25"><span class="price"><?php echo $item['price_str']; ?></span></span>
+					</div>
+					<p class="product-desc truncate_list_desc"><?php echo $item['features']; ?></p>
+					<span class="addto"><a href="<?php Product_UI::href(array('id_product' => $item['id'])); ?>" title="<?php echo $item['label']; ?>">Подробнее</a></span>
+					<!-- <span class="spacer-hide"> | </span>
+					<span class="addto"><a href="/">В сравнение</a></span> -->
+				</div>
+				<div class="clearfloat"></div>
+			</div>
+		</li>
+<?php
+	}
+	$this->href_params = array (
+			array ( 'name' => 't',           'value' => $_REQUEST ['t']           ),
+			array ( 'name' => 'id_category', 'value' => $_REQUEST ['id_category'] ),
+			array ( 'name' => 'id_brand',    'value' => $_REQUEST ['id_brand']    ),
+			array ( 'name' => 'order',       'value' => $_REQUEST ['order']       ),
+			array ( 'name' => 'p',           'value' => $_REQUEST ['p']           ),
+			array ( 'name' => 'limit',       'value' => $_REQUEST ['limit']       ),
+	);
+?>
+		</ul>
+		<div class="toolbar-bottom">
+			<div class="toolbar">
+				<div class="pager">
+					<p class="amount">с <?php echo $data['begin']; ?> по <?php echo $data['end']; ?>, всего <?php echo $data['product_qty']; ?></p>
+					<div class="limiter">
+						<label>По</label>
+						<select onchange="setLocation(this.value)">
+<?php
+	foreach ($limits as $limit) {
+?>
+						<option value="<?php $this->href(array('p' => 1, 'limit' => $limit)); ?>" <?php echo ($this->data['limit'] == $limit ? 'selected="selected"' : '' ); ?>><?php echo $limit; ?></option>
+<?php
+	}
+?>
+						</select> на странице
+					</div>
+					<div class="pages">
+						<strong>Страница:</strong>
+						<ol>
+<?php
+	$i = 1;
+	while ( $i <= $page_qty ) {
+		if ($i == $this->data['p']) {
+?>
+			<li class="current"><?php echo $i; ?></li>
+<?php
+		} else {
+?>
+			<li><a href="<?php $this->href(array('p' => $i)); ?>"><?php echo $i; ?></a></li>
+<?php
+		}
+		$i++;
+	}
+?>
+							<!-- <li><a class="next" href="?p=2" title="Следующая страница"><img src="/images/i_pager-next.gif" alt="Следующая страница" class="v-middle" /></a></li> -->
+						</ol>
+					</div>
+				</div>
+				<div class="sorter">
+					<p class="view-mode">
+						<label>View as:</label>
+						<strong title="Grid" class="grid">Grid</strong>&nbsp;<a href="?mode=list" title="List" class="list">List</a>&nbsp;
+					</p>
+					<div class="sort-by">
+						<label>Сортировка по</label>
+						<select onchange="setLocation(this.value)">
+<?php
+	foreach ($sorts as $sort) {
+?>
+		<option value="<?php $this->href(array('order' => $sort['name'])); ?>" <?php echo ( $this->data['order'] == $sort['name'] ? 'selected="selected"' : ''); ?>><?php echo $sort['label']; ?></option>
+<?php
+	}
+?>
+						</select>
+						<!-- <a href="?dir=desc&amp;order=position" title="Направление сортировки"><img src="/images/i_asc_arrow.gif" alt="Направление сортировки" class="v-middle" /></a> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="switch_thumb_bottom"><span class="switch_thumb">Переключить вид</span></div>
+	</div>
+
+<script type="text/javascript">
+
+	var $j = jQuery.noConflict();
+
+	$j(document).ready(function(){
+
+		$j(".product-info-col").each(function(){
+
+			var link = $j("a:eq(0)", this).attr('href');
+			$j(".rating-links a:first", this).attr("href", link + "#reviews");
+			$j(".rating-links a:last", this).attr("href", link + "#review-form");
+
+		});
+	});
+
+</script>

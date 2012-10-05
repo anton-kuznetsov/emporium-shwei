@@ -1,0 +1,582 @@
+<script type="text/javascript">
+
+    var $j = jQuery.noConflict();
+
+    $j(document).ready( function() {
+        $j('.video_container a:eq(0)').rokmagemodal({ rokmagemodalcontainer: "#video" });
+	});
+
+</script>
+
+<script type="text/javascript">
+
+    var optionsPrice = new Product.OptionsPrice([]);
+
+</script>
+
+<div id="messages_product_view"></div>
+
+<div class="product-view">     	
+	<div class="product-essential">     		
+
+		<form action="<?php ShopingCart_UI::href(array( 'action' => 'add', 'id_product' => $data['id'], 'qty' => 1 ), 0, 0); ?>" method="post" id="product_addtocart_form">
+			<fieldset class="no-display">
+				<input type="hidden" name="related_product" id="related-products-field" value="" />     				
+			</fieldset>         				
+			<div class="product-name">
+				<h2><?php echo $html_title_page; ?></h2>         				
+			</div>
+
+			<!-- Add RokMage Product Zoom -->
+
+			<div class="product-img-box">                
+
+<script type="text/javascript">
+
+	var imgSmallWidth = 360;
+	var imgSmallHeight = 360;
+	var imgWidth = 500;
+	var imgHeight = 500;
+	var $j = jQuery.noConflict();
+
+	$j(function() {
+		$j(".zoomer").miniZoomPan({ });
+		// Hide these as we add them via product-view-media
+		$j('.product-shop .no-rating, .product-shop .ratings').remove();
+    });
+
+</script>        
+
+				<div class="rokmage-product-img-box" style="width:396px;">    
+					<div class="zoomer-product-pics">
+						<div id="zoomable" class="rounded_bg" style="width:366px;height:410px;padding:12px;">
+							<div class="photo-container" style="width:361px;height:360px;">
+
+<?php
+	$i = 0;
+	foreach ( $data['photos'] as $photo ) {
+		$i++;
+?>
+
+		<div id="photo_<?php echo $i; ?>" class="zoomer" <?php echo ($i > 1 ? 'style="display:none;"' : ''); ?> >
+			<img id="productImgDefault" src="<?php echo $photo['href']; ?>" alt="<?php echo $data['label']; ?>" />
+		</div>
+
+<?php
+	}
+?>
+
+								<div class="thumbswrapper" style="width:360px;">
+									<div class="thumbsbutton" style="width:337px;">
+										<a href="javascript:void(0)">Ещё фотографии</a>
+									</div>
+									<div class="thumbsviewer">
+										<ul class="thumbs">
+
+<?php
+	$i = 0;
+	foreach ( $data['photos'] as $photo ) {
+		$i++;
+		//if ( $i > 0 ) {
+?>
+
+			<li style="width:78px;height:78px">
+				<a class="zoomhover" href="javascript:void(0)" onclick="switch_product_img('photo_<?php echo $i; ?>', 4);">
+					<img src="<?php echo $photo['href_image_78']; ?>" alt="<?php echo $data['label']; ?>" /></a>
+			</li>
+
+<?php
+		//}
+	}
+?>
+
+										</ul>
+										<div class="clearfloat"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+<script type="text/javascript">
+
+    var $j = jQuery.noConflict();
+
+    // Add our thumbnail zoom effect on hover
+    $j(document).ready(function() {
+        $j('a.zoomhover img').hover(function() { //mouse in
+            //$j(this).stop().animate({ width: "110%"}, 100);
+        }, function() { //mouse out
+            //$j(this).stop().animate({ width: "100%"}, 300);
+        });
+
+        // Adjust width of info depending on size of image
+        $space = $j('div.col-main').width();
+        $used = $j('div.rokmage-product-img-box').width()
+        $available = $space - $used - 10;
+        $j('div.product-shop').css({ "width": $available });
+
+		// Add our slide up thumbnail viewer
+		$j(".thumbsbutton").click(function(){
+			$j(".thumbsviewer").slideToggle();
+			$j(".thumbsbutton").toggleClass("show");
+		});
+	});
+
+</script>        
+
+			</div>
+
+			<!-- End RokMage Product Zoom -->
+
+			<div class="product-shop">
+				<div class="price-box">
+					<span class="regular-price" id="product-price-16"><span class="price"><?php echo $data['price_str']; ?></span></span>
+				</div>
+				<p class="availability in-stock">Доступность: <span>в наличии</span></p>
+				<div class="add-to-box">
+					<div class="add-to-cart">
+						<label for="qty">Кол-во:</label>
+						<input type="text" name="qty" id="qty" maxlength="12" value="1" title="Кол-во" class="input-text qty" />
+						<button type="button" title="В корзину" class="button btn-cart" onclick="productAddToCartForm.submit()">
+							<span><span>В корзину</span></span>
+						</button>             						
+					</div>
+				</div>
+			</div>         				
+
+			<div class="clearer"></div>             		
+
+		</form>    
+
+<script type="text/javascript">
+
+    //<![CDATA[
+
+	var productAddToCartForm = new VarienForm('product_addtocart_form');
+
+	productAddToCartForm.submit = function() {
+		if (this.validator.validate()) {
+			this.form.submit();
+		}
+	}.bind(productAddToCartForm);
+
+    //]]>
+
+</script>     	
+
+	</div>
+
+<script type="text/javascript">
+
+	var $j = jQuery.noConflict();
+
+	$j(document).ready( function() {
+
+		$j(".tab_content").hide();
+		$j("ul.tabs li:first").addClass("active");
+		$j(".tab_content:first").show();
+
+		$j("ul.tabs li").click(function() {
+
+			$j("ul.tabs li").removeClass("active");
+			$j(this).addClass("active");
+			$j(".tab_content").hide();
+
+			var activeTab = $j(this).find("a").attr("href");
+			$j(activeTab).fadeIn(500);
+
+			return false;
+		});
+
+		var url = location.pathname;
+
+		// Enable the reviews tab if coming from review link
+		var url = document.location.toString();
+
+		if (url.match('#reviews')) {
+
+  			$j("ul.tabs li").removeClass("active");
+			$j("ul.tabs li.reviews").addClass("active");
+			$j(".tab_content").hide();
+			$j("#reviews").show();
+			$j('html, body').animate({scrollTop: $j("#reviews").offset().top}, '1');
+
+		}
+
+		if (url.match('#review-form')) {
+
+  			$j("ul.tabs li").removeClass("active");
+			$j("ul.tabs li.reviews").addClass("active");
+			$j(".tab_content").hide();
+			$j("#reviews").show();
+			$j('html, body').animate({scrollTop: $j("#review-form").offset().top}, '1');
+
+		}
+	});
+
+// function equalHeight(group) {
+// tallest = 0;
+// group.each(function() {
+// thisHeight = $j(this).height();
+// if(thisHeight > tallest) {
+// tallest = thisHeight + 20;
+// }
+// });
+// group.height(tallest);
+// }
+// $j(document).ready(function() {
+// var divs = $j('#overview, #description, #info, #reviews');
+// equalHeight(divs);
+// });
+
+</script>      	
+
+	<div class="product-collateral">                 		
+		<ul class="tabs">
+			<li>			
+				<a href="#overview">Обзор</a>
+			</li>
+			<li>			
+				<a href="#description">Описание</a>
+			</li>
+			<li>
+				<a href="#info">Характеристики</a>
+			</li>
+			<!-- <li class="reviews last-tab">				
+				<a href="#reviews">Отзывы</a>
+			</li> -->
+		</ul>
+		<div class="tab_container">
+			<div id="overview" class="short-description std tab_content">
+				<h2>Обзор</h2>
+				<p><?php echo $data['overview']; ?></p>                      				
+			</div>                             			
+			<div id="description" class="description tab_content">
+				<h2>Описание</h2>
+				<div class="std">
+					<p><?php echo $data['description']; ?></p>
+				</div>             			
+			</div>                             			
+			<div id="info" class="additional tab_content">
+				<!-- <h2>Характеристики</h2> -->
+				<?php echo $data['features_table']; ?>     				
+				<!-- <table class="data-table" id="product-attribute-specs-table">         					
+					<col width="25%" />         					
+					<col />         					
+					<tbody>                     						
+						<tr>                 							
+							<th class="label">Хар-ка 1</th>
+							<td class="data">1000</td>
+						</tr>
+						<tr>
+							<th class="label">Хар-ка 2</th>
+							<td class="data">
+								пункт 1<br />
+								пункт 2<br />
+								пункт 3<br />
+								пункт 4<br />
+								пункт 5
+							</td>             						
+						</tr>                     						
+						<tr>                 							
+							<th class="label">Хар-ка 3</th>
+							<td class="data">размеры товара</td>
+						</tr>
+						<tr>
+							<th class="label">Хар-ка 4</th>
+							<td class="data">большой текст...</td>
+						</tr>
+					</tbody>
+				</table> -->
+
+<script type="text/javascript">
+
+	decorateTable('product-attribute-specs-table')
+
+</script>
+
+			</div>                                                        
+
+<script type="text/javascript">
+
+	/* <![CDATA[ */
+
+	var $j = jQuery.noConflict();
+
+	$j(document).ready(function(){
+
+		var $reviewlink = $j("#customer-reviews a").html();
+		$j("#customer-reviews a").replaceWith("<br/><h3>" + $reviewlink + "</h3>");
+		$j(".review-box a").attr("href", "javascript:;");
+
+		$j(".review-box a").click(function() {
+
+			$j("ul.tabs li").removeClass("active");
+			$j("ul.tabs li.reviews").addClass("active");
+			$j(".tab_content").hide(); $j(".tab_content:last").show();
+
+		});
+
+		$j('.review-box a:eq(0)').click(function(){ 
+
+			$j('html, body').animate({scrollTop: $j("#reviews").offset().top}, 'normal'); 
+
+		});
+
+		$j('.review-box a:eq(1)').click(function(){ $j('html, body').animate({scrollTop: $j("#review-form").offset().top}, 'slow'); });
+		$j(".upsell-box-padding").each(function(){
+
+			var link = $j("a:eq(0)", this).attr('href');
+			$j("a:eq(2)", this).attr("href", link + "#reviews");
+			$j("a:eq(3)", this).attr("href", link + "#review-form");
+
+		});
+	});
+
+	/* ]]> */
+
+</script>
+
+			<!-- <div id="reviews" class="tab_content">
+				<div class="box-collateral box-reviews" id="customer-reviews">
+					<h2>Customer Reviews</h2>
+					<div class="pager">
+						<p class="amount">
+							<strong>1 Item(s)</strong>
+						</p>
+						<div class="limiter">
+							<label>По</label>
+							<select onchange="setLocation(this.value)">
+								<option value="/?limit=10" selected="selected">10</option>
+								<option value="/?limit=20">20</option>
+								<option value="/?limit=50">50</option>
+							</select> на странице
+						</div>
+					</div>
+					<dl>
+						<dt>
+							<a href="/catalog/product/view/id/15/">Название отзыва</a>, автор: <span>Имя_Пользователя</span>
+						</dt>
+						<dd>
+							<table class="ratings-table">
+								<col width="1" />
+								<col />
+								<tbody>
+									<tr>
+										<th>Качество</th>
+										<td>
+											<div class="rating-box">
+												<div class="rating" style="width:80%;"></div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th>Практичность</th>
+										<td>
+											<div class="rating-box">
+												<div class="rating" style="width:80%;"></div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th>Цена</th>
+										<td>
+											<div class="rating-box">
+												<div class="rating" style="width:60%;"></div>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<?php echo '... Текст обзора ...'; ?>
+							<small class="date">(Опубликовано 12.01.2012)</small>
+						</dd>
+					</dl>
+					<div class="pager">
+						<p class="amount">
+							<strong>1 Item(s)</strong>
+						</p>
+						<div class="limiter">
+							<label>По</label>
+							<select onchange="setLocation(this.value)">
+								<option value="/?limit=10" selected="selected">10</option>
+								<option value="/?limit=20">20</option>
+								<option value="/?limit=50">50</option>
+							</select> на странице
+						</div>
+					</div>
+				</div>
+
+				<form action="/?review/product/post/id/16/" method="post" id="review-form">
+					<div class="form-add">
+						<h2>Написать отзыв</h2>
+						<h3>Про: <span><?php echo $data['label']; ?></span></h3>
+						<h4>Как вы оцениваете этот продукт? <em class="required">*</em></h4>
+						<span id="input-message-box"></span>
+						<table class="data-table" id="product-review-table">
+							<col />
+							<col width="1" />
+							<col width="1" />
+							<col width="1" />
+							<col width="1" />
+							<col width="1" />
+							<thead>
+								<tr>
+									<th>&nbsp;</th>
+									<th><span class="nobr">1 звезда</span></th>
+									<th><span class="nobr">2 звезды</span></th>
+									<th><span class="nobr">3 звезды</span></th>
+									<th><span class="nobr">4 звезды</span></th>                         									
+									<th><span class="nobr">5 звёзд</span></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>Цена</th>
+									<td class="value"><input type="radio" name="ratings[3]" id="Price_1" value="11" class="radio" /></td>
+									<td class="value"><input type="radio" name="ratings[3]" id="Price_2" value="12" class="radio" /></td>
+									<td class="value"><input type="radio" name="ratings[3]" id="Price_3" value="13" class="radio" /></td>
+									<td class="value"><input type="radio" name="ratings[3]" id="Price_4" value="14" class="radio" /></td>
+									<td class="value"><input type="radio" name="ratings[3]" id="Price_5" value="15" class="radio" /></td>
+								</tr>
+								<tr>
+									<th>Практичность</th>
+									<td class="value"><input type="radio" name="ratings[2]" id="Value_1" value="6" class="radio" /></td>
+									<td class="value"><input type="radio" name="ratings[2]" id="Value_2" value="7" class="radio" /></td>
+									<td class="value"><input type="radio" name="ratings[2]" id="Value_3" value="8" class="radio" /></td>
+									<td class="value"><input type="radio" name="ratings[2]" id="Value_4" value="9" class="radio" /></td>
+									<td class="value"><input type="radio" name="ratings[2]" id="Value_5" value="10" class="radio" /></td>
+								</tr>
+								<tr>
+									<th>Качество</th>
+									<td class="value"><input type="radio" name="ratings[1]" id="Quality_1" value="1" class="radio" /></td>
+									<td class="value"><input type="radio" name="ratings[1]" id="Quality_2" value="2" class="radio" /></td>
+									<td class="value"><input type="radio" name="ratings[1]" id="Quality_3" value="3" class="radio" /></td>
+									<td class="value"><input type="radio" name="ratings[1]" id="Quality_4" value="4" class="radio" /></td>
+									<td class="value"><input type="radio" name="ratings[1]" id="Quality_5" value="5" class="radio" /></td>
+								</tr>
+							</tbody>
+						</table>
+						<input type="hidden" name="validate_rating" class="validate-rating" value="" />
+
+<script type="text/javascript">
+
+	decorateTable('product-review-table');
+
+</script>                 						
+
+			<!--			<ul class="form-list">
+							<li>
+								<label for="nickname_field" class="required"><em>*</em>Логин</label>
+								<div class="input-box">
+									<input type="text" name="nickname" id="nickname_field" class="input-text required-entry" value="" />
+								</div>
+							</li>
+							<li>
+								<label for="summary_field" class="required"><em>*</em>Кратко</label>
+								<div class="input-box">
+									<input type="text" name="title" id="summary_field" class="input-text required-entry" value="" />
+								</div>
+							</li>
+							<li>
+								<label for="review_field" class="required"><em>*</em>Обзор</label>
+								<div class="input-box">
+									<textarea name="detail" id="review_field" cols="5" rows="3" class="required-entry"></textarea>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="buttons-set">
+						<button type="submit" title="Добавить отзыв" class="button">
+							<span><span>Добавить отзыв</span></span>
+						</button>
+					</div>
+				</form> -->
+
+<script type="text/javascript">
+
+//<![CDATA[
+
+    var dataForm = new VarienForm('review-form');
+
+    Validation.addAllThese([
+		['validate-rating', 'Пожалуйста, установите рейтинги по всем пунктам', function(v) {
+		    var trs = $('product-review-table').select('tr');
+		    var inputs;
+		    var error = 1;
+		    for( var j=0; j < trs.length; j++ ) {
+		        var tr = trs[j];
+		        if( j > 0 ) {
+		            inputs = tr.select('input');
+		            for( i in inputs ) {
+		                if( inputs[i].checked == true ) {
+		                    error = 0;
+		                }
+		            }
+		            if( error == 1 ) {
+		                return false;
+		            } else {
+		                error = 1;
+		            }
+		        }
+		    }
+		    return true;
+		}]
+	]);
+
+//]]>
+
+</script>
+
+			<!-- </div> -->
+		</div>
+		<div class="clearfloat"></div>
+		<div class="up-sell">
+			<h3>Вы также можете быть заинтересованы в следующих товарах</h3>
+			<table class="products-grid" id="upsell-product-table">
+
+<script type="text/javascript">
+
+	var $j = jQuery.noConflict();
+	// Truncate
+	$j(function() {
+		$j(".truncate_grid_desc").truncate({max_length: 150 });
+	});
+
+</script>
+
+<?php
+	foreach ( $data['accessories'] as $item ) {
+?>
+
+		<tr>
+			<td>
+				<div class="upsell-box-padding">
+					<a href="<?php Product_UI::href(array( 'id_product' => $item['id'] )); ?>" class="product-image"><img src="<?php echo $item['href_image_50']; ?>" width="50" height="50" alt="<?php echo $item['label']; ?>" title="<?php echo $item['label']; ?>" /></a>                 							
+					<h4 class="product-name"><a href="<?php Product_UI::href(array( 'id_product' => $item['id'] )); ?>"><?php echo $item['label']; ?></a></h4>
+					<div class="price-box">
+						<span class="regular-price" id="product-price-27"><span class="price"><?php echo $item['price_str']; ?></span></span>
+					</div>
+					<p class="product-desc truncate_grid_desc upsell-box-product-desc"><?php echo $item['features']; ?></p>
+					<div class="clearfloat"></div>
+				</div>
+			</td>
+		</tr>
+
+<?php
+	}
+?>
+
+			</table>
+
+<script type="text/javascript">
+
+	decorateTable('upsell-product-table');
+
+</script>
+
+		</div>
+	</div>
+</div>

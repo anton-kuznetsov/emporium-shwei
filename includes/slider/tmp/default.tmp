@@ -1,0 +1,73 @@
+				<div id="slider_welcome">
+
+<script type="text/javascript">
+
+	var $j = jQuery.noConflict();
+	// Truncate
+	$j(function() {
+		$j(".truncate_slider_title").truncate({max_length: 40 });
+		$j(".truncate_slider_desc").truncate({max_length: 200 });
+	});
+
+</script>
+
+					<div id="homepage-contentslider-container">
+						<!-- "previous slide" button -->
+						<a class="backward">prev</a>
+						<!-- container for the slides -->
+						<div class="images">
+
+							<!-- -->
+
+<?php
+
+	foreach ($data as $item) {
+
+?>
+		<div>
+            <a class="product-image" href="<?php Product_UI::href(array( 'id_product' => $item['product']['id'] )); ?>">
+                <img src="<?php echo $item['product']['href_image_250']; ?>" alt="<?php echo $item['product']['label']; ?>" />
+            </a>
+            <div class="slider-productinfo">
+	            <h3><a href="<?php Product_UI::href(array( 'id_product' => $item['product']['id'] )); ?>" class="truncate_slider_title"><?php echo $item['product']['label']; ?></a></h3>
+	            <span class="rating-box"><span class="rating" style="width: 90%"></span></span><br />
+				<p class="truncate_slider_desc"><?php echo $item['product']['features']; ?></p><span class="regular-price"><span class="price"><?php echo $item['product']['price_str']; ?></span></span><br/>
+	            <button class="button" onclick="setLocation('<?php Product_UI::href(array( 'id_product' => $item['product']['id'] )); ?>')"><span><span>Подробнее</span></span></button>
+            </div>
+        </div>
+<?php	
+	
+	}
+
+?>
+
+    					</div>
+					    <!-- "next slide" button -->
+					    <a class="forward">next</a>
+        				<!-- the tabs -->
+					    <div class="tabs">
+					        <a href="#"></a>
+					        <a href="#"></a>
+					        <a href="#"></a>
+					        <a href="#"></a>
+					    </div>
+						<div class="clearfloat"></div>
+					</div>
+
+<script type="text/javascript">
+
+	var $j = jQuery.noConflict();
+	$j(function() {
+		$j("div.tabs").tabs(".images > div", {
+			// enable "cross-fading" effect
+			effect: 'fade',
+			fadeOutSpeed: "slow",
+			// start from the beginning after the last tab
+			rotate: true
+			// use the slideshow plugin.
+		}).slideshow( { autoplay: true, interval: 4000});
+	});
+
+</script>
+
+                </div>

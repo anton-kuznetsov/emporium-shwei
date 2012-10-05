@@ -1,0 +1,24 @@
+<div class="rok-breadcrumbs">
+	<ul>
+		<li class="home">
+			<a href="/" title="Главная страница">Главная</a>
+		</li>
+<?php
+	foreach ($data as $item) {
+		if ($item['is_last'] == 1) {
+?>
+			<li>
+				<strong><?php echo $item["label"]; ?></strong>
+			</li>
+<?php
+		} else {
+?>
+			<li>
+				<a href='<?php echo $item["href"]; ?>' title='<?php echo $item["label"]; ?>'><?php echo $item["label"]; ?></a>
+			</li>
+<?php
+		}
+	}
+?>
+	</ul>
+</div>

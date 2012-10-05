@@ -1,0 +1,10 @@
+brands
+	description
+	company
+	country
+	site
+	
+brand_recomended_products
+	id
+	id_brand
+	id_product

@@ -1,0 +1,73 @@
+<script type="text/javascript">
+    jQuery(document).ready(function(){
+        jQuery('a.modal, .summary .amount a').rokmagemodal({
+			rokmagemodalcontainer: "#rokmage-header-cart",
+			overlayopacity       : 0.2,
+			overlayinspeed       : 300,
+			modalpreposition     : {"top":"43%"},
+			modalpauseb4entry    : 200,
+			modalentryanimation  : {"top": "50%", "opacity": "1"},
+			modalentryspeed      : 550,
+			modalexitanimation   : {"top": "55%", "opacity": "0"},
+			modalexitspeed       : 350,
+			pauseb4overlayfadeout: 500,
+			overlayoutspeed      : 200
+		});
+    });
+
+	var $j = jQuery.noConflict();
+
+	// Scroller
+	$j(function() {
+    	$j("div.cart-scrollable").scrollable({speed: 400, size: 1});
+	});
+
+	// Remove sidebar cart
+	$j(document).ready(function(){
+    	$j(".block-cart p.block-subtitle, #cart-sidebar").remove();
+	});
+
+</script>
+
+<div id="rokmage-header-cart" class="modalcontent">
+	<h6>Сумма: <span class="price"><?php echo $data['subtotal_str']; ?></span></h6>
+	<div class="cart-scrollable-container">
+	    <a class="prev"></a>
+	    <div class="cart-scrollable">
+	        <div class="items">
+
+<?php
+	$i = 0;
+	$c = count( $data['items'] );
+	foreach ( $data['items'] as $item ) {
+		$i++;
+?>
+
+		<ul class="scroll-item">
+			<li>
+				<span class="small"><?php echo $i; ?> из <?php echo $c; ?></span>
+			</li>
+			<li class="item">
+				<a href="<?php Product_UI::href(array( 'id_product' => $item['id_product'] )); ?>" class="product-image"><img src="<?php echo $item['href_image_90']; ?>" width="90" height="90" alt="<?php echo $item['label']; ?>" title="<?php echo $item['label']; ?>" /></a>
+		    	<div class="product-details">
+					<h4><a href="<?php Product_UI::href(array( 'id_product' => $item['id_product'] )); ?>"><?php echo $item['label']; ?></a></h4>
+					<strong><?php echo $item['qty']; ?></strong> x <span class="price"><?php echo $item['price_str']; ?></span>                    
+				</div>
+				<a href="<?php ShopingCart_UI::href(array( 'action' => 'delete', 'id_item' => $item['id'] ), 0, 0); ?>" onclick="return confirm('Вы действительно хотите удалить этот товар из корзины?');" class="modalcart-btn-remove"><img src="<?php echo $site_root; ?>/images/btn_remove.gif" alt="Удалить" title="Удалить" />Удалить из корзины</a>
+			</li>
+		</ul>
+
+<?php
+	}
+?>
+
+            </div>
+		</div>
+		<a class="next"></a>
+		<div class="clearfloat"></div>
+	</div>
+	<div class="actions" id="cart-buttons">
+		<span class="button"><a onclick="setLocation('<?php CreateOrder_UI::href( array( 'action' => 'step1' ), 0, 1 ); ?>')">Оформить заказ</a></span>
+		<span class="button f-right"><a onclick="setLocation('<?php ShopingCart_UI::href(); ?>')">Поменять</a></span>
+	</div>
+</div>
