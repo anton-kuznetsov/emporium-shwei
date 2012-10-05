@@ -1,0 +1,69 @@
+<div class="block block-cart">
+	<div class="block-title">
+        <strong><span><span class="color">Корзина</span></span></strong>
+	</div>
+	<div class="block-content">
+		<div class="summary">
+			<p class="amount">В корзине <a href="/">товара</a></p>
+			<p class="subtotal"><span class="label">на сумму:</span> <span class="price"><?php echo $data['subtotal_str']; ?></span></p>
+		</div>
+		<div class="actions">
+			<button type="button" title="Checkout" class="button" onclick="setLocation('<?php CreateOrder_UI::href(array( 'action' => 'step1' ), 0, 0); ?>')"><span><span>Оформить заказ</span></span></button>
+		</div>
+		<p class="block-subtitle">Recently added item(s)</p>
+		<ol id="cart-sidebar" class="mini-products-list">
+			<li class="item">
+            	<a href="/" title="Ottoman" class="product-image"><img src="/" width="50" height="50" alt="Ottoman" /></a>
+        		<div class="product-details">
+        			<a href="/" title="Удалить" onclick="return confirm('Вы действительно хотите удалить этот товар из корзины?');" class="btn-remove">Удалить</a>
+					<p class="product-name"><a href="/">Ottoman</a></p>
+        			<strong>1</strong> x <span class="price">$299.99</span>
+                </div>
+			</li>
+			<li class="item">
+            	<a href="/" title="BlackBerry 8100 Pearl" class="product-image"><img src="/" width="50" height="50" alt="BlackBerry 8100 Pearl" /></a>
+				<div class="product-details">
+					<a href="/" title="Удалить" onclick="return confirm('Вы действительно хотите удалить этот товар из корзины?');" class="btn-remove">Удалить</a>
+					<p class="product-name"><a href="/">BlackBerry 8100 Pearl</a></p>
+					<strong>1</strong> x <span class="price">$349.99</span>
+                </div>
+			</li>
+		</ol>
+
+<script type="text/javascript">
+
+	decorateList('cart-sidebar', 'none-recursive');
+
+</script>
+
+	</div>
+</div>
+<div class="block">
+	<div class="block-title">
+        <strong><span><span class="color">Контакты</span></span></strong>
+	</div>
+	<div class="block-content">
+		<table border=0 class="block-content-hidetable">
+			<tbody>
+				<tr>
+					<th>Телефон</th>
+					<td>(8352) 63-82-52</td>
+				</tr>
+				<tr>
+					<th>ICQ</th>
+					<td>563-157-687</td>
+				</tr>
+				<tr>
+					<th>Skype</th>
+					<td>kilowad</td>
+				</tr>
+				<tr>
+					<th>E-mail</th>
+					<td>shwei21@ya.ru</td>
+				</tr>
+			</tbody>
+		</table>
+		<br />
+		<button class="button f-left" onclick="setLocation('<?php SendMessage_UI::href(array( 'action' => 'step1' )); ?>')"><span><span>Отправить сообщение</span></span></button>
+	</div>
+</div>

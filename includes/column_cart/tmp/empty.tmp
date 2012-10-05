@@ -1,0 +1,37 @@
+<div class="block block-cart">
+	<div class="block-title">
+		<strong><span><span class="color">Корзина</span></span></strong>
+	</div>
+	<div class="block-content">
+		<p class="empty">У вас нет товара в корзине</p>
+	</div>
+</div>
+<div class="block">
+	<div class="block-title">
+        <strong><span><span class="color">Контакты</span></span></strong>
+	</div>
+	<div class="block-content">
+		<table border=0 class="block-content-hidetable">
+			<tbody>
+				<tr>
+					<th>Телефон</th>
+					<td>(8352) 63-82-52</td>
+				</tr>
+				<tr>
+					<th>ICQ</th>
+					<td>563-157-687</td>
+				</tr>
+				<tr>
+					<th>Skype</th>
+					<td>kilowad</td>
+				</tr>
+				<tr>
+					<th>E-mail</th>
+					<td>shwei21@ya.ru</td>
+				</tr>
+			</tbody>
+		</table>
+		<br />
+		<button class="button f-left" onclick="setLocation('<?php SendMessage_UI::href(array( 'action' => 'step1' )); ?>')"><span><span>Отправить сообщение</span></span></button>
+	</div>
+</div>

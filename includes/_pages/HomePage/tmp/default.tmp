@@ -1,0 +1,362 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<title><?php echo $sitename; ?></title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="No-Cache">
+		<meta http-equiv="pragma" content="no-cache">
+		<meta name="robots" content="all">
+
+		<meta name="description" content="Интернет-магазин швейных машин Bernina, Janome, AstraLux, Elna, оверлоков и аксессуаров. Вы сможете купить швейную, вышивальную или вязальную машину с гарантией и доставкой.">
+		<meta name="keywords" content="швейные машины чебоксары, вышивальные машины чебоксары, вязальные машины чебоксары, оверлоки чебоксары, швейные машины интернет магазин, купить швейные машины, швейные машины цена">
+
+		<link rel="stylesheet" type="text/css" href="<?php echo $site_root; ?>css/kinetic.css">
+		<link rel="stylesheet" type="text/css" href="<?php echo $site_root; ?>css/joomla.css">
+		<link rel="stylesheet" type="text/css" href="<?php echo $site_root; ?>css/style.css">
+		<link rel="stylesheet" type="text/css" href="<?php echo $site_root; ?>css/typography.css">
+
+		<script type="text/javascript" src="<?php echo $site_root; ?>js/prototype.js"></script>
+		<script type="text/javascript" src="<?php echo $site_root; ?>js/rokmage-main-js/truncate.js"></script>
+		<script type="text/javascript" src="<?php echo $site_root; ?>js/rokmage-main-js/jquery.easing.1.3.js"></script>
+	</head>
+	<body class="cms-index-index">
+		<div class="wrapper">
+			<div class="page-top"></div>
+			<div class="page">
+				<!-- Коричневый фон для главного слайдера -->
+				<div id="color-block-2" style="height: 303px">
+					<div id="color-block-inner" style="height: 303px"></div>
+				</div>
+				<!--  -->
+				<div class="header-container z2">    
+
+					<!-- Module_0 : Top Header -->
+					<?php echo ( $this->modules[0] ? $this->modules[0]->render() : '' ); ?>
+
+				</div>
+				<!--  -->
+				<div class="homepage-spacer"></div>
+				<!--  -->
+				<div class="header-container">
+				    <div class="quick-access">
+				        <div class="inner-header-container">
+							<span class="date">
+<?php
+
+	echo $week_days_rus[date('N') - 1] . ', ' . date('j') . ' ' . $month_rus[date('n') - 1] . ' ' . date('Y');
+
+?>
+							</span>
+							<form id="search_mini_form" action="<?php SearchResults_UI::href( ); ?>" method="post">
+							    <div class="form-search">
+							        <!-- <label for="search">Search:</label> -->
+							        <input id="search" type="text" name="q" value="" class="input-text" />
+							        <!-- <button type="submit" title="Search" class="button"><span><span>Search</span></span></button> -->
+							        <div id="search_autocomplete" class="search-autocomplete"></div>
+
+<script type="text/javascript">
+    //<![CDATA[
+        var searchForm = new Varien.searchForm('search_mini_form', 'search', 'Поиск...');
+        searchForm.initAutocomplete('http://demo.rockettheme.com/magento/index.php/kinetic_style8/catalogsearch/ajax/suggest/', 'search_autocomplete');
+    //]]>
+</script>
+
+							    </div>
+							</form>
+        
+<script type="text/javascript">
+
+	var $j = jQuery.noConflict();
+	$j('document').ready(function(){
+		fontSize(".fontResizer", ".wrapper", 10, 12, 14, "Шрифт", "KineticCookie", "A", "A");
+	});
+
+</script>
+
+							<div class="fontResizer"></div>
+						</div>
+					</div>
+					<div class="quick-access2">
+						<div class="inner-header-container">
+							<div class="welcome-msg"><span class="color">Интернет-магазин</span> Shwei.Ru</div>
+							<div class="top-links">
+								<div class="links-container">
+
+									<!-- Module_1 : Button Cart -->
+									<?php echo ( $this->modules[1] ? $this->modules[1]->render() : '' ); ?>
+
+									<!--
+					                <ul class="links">
+					                    <li class="first" ><a href="http://demo.rockettheme.com/magento/index.php/kinetic_style8/customer/account/login/" title="Log In" >Вход</a></li>
+					                    <li ><a href="http://demo.rockettheme.com/magento/index.php/kinetic_style8/customer/account/create/" title="Sign Up" >Регистрация</a></li>
+					                </ul>
+					                -->
+								</div>
+							</div>
+	    				</div>
+					</div>
+				</div>
+
+				<!-- Всплывающие формы -->
+				
+<script type="text/javascript">
+
+    var $j = jQuery.noConflict();
+    $j(document).ready( function() {
+        $j('a[title=Log In]').rokmagemodal({
+			rokmagemodalcontainer: "#rokmage-login-content",
+			overlayopacity       : 0.2,
+			overlayinspeed       : 300,
+			modalpreposition     : {"top":"43%"},
+			modalpauseb4entry    : 200,
+			modalentryanimation  : {"top": "50%", "opacity": "1"},
+			modalentryspeed      : 550,
+			modalexitanimation   : {"top": "55%", "opacity": "0"},
+			modalexitspeed       : 350,
+			pauseb4overlayfadeout: 500,
+			overlayoutspeed      : 200
+		});
+    });
+
+</script>
+
+				<div id="rokmage-login-content" class="modalcontent">
+		            <form action="http://demo.rockettheme.com/magento/index.php/kinetic_style8/customer/account/loginPost/" method="post" id="login-form2">
+		                <fieldset>
+		                    <legend>Вход</legend>
+		                    <h2>Вход</h2>
+		                    <div class="rokmage-email-login-block">
+		                        <label for="email">Ваш e-mail</label>
+		                        <input name="login[username]" value="" id="email" type="text" class="input-text required-entry" title="E-mail" />
+		                    </div>
+		
+		                    <div class="rokmage-password-login-block">
+		                        <label for="pass">Пароль</label>
+		                        <input name="login[password]" type="password" class="input-text required-entry validate-password" id="pass" title="Пароль" />
+		                    </div>
+		                    <div class="clearfloat"></div>
+		
+		                    <button class="button" type="submit" name="send" id="send2"><span><span>Войти</span></span></button>
+		                    <p class="rokmage-forgot-pass"><a href="http://demo.rockettheme.com/magento/index.php/kinetic_style8/customer/account/forgotpassword/" class="f-left">Забыли свой пароль?</a></p>
+		                    <div class="clearfloat"></div>
+		                </fieldset>
+		            </form>
+    
+<script type="text/javascript">
+
+	//<![CDATA[
+    var dataForm = new VarienForm('login-form2', true);
+    //]]>
+
+</script>
+
+				</div>
+
+				<!-- Add Modals -->
+
+				<?php
+						// Здесь будут выведены все конструкции всплывающих модальных форм
+						// Кнопки и ссылки, по которым производится вызов, размещаются в своих местах
+						// как обычные модули через render() 
+				
+						foreach ($this->modules as $module) {
+							if ( $module->is_use_modal ) {
+								echo $module->render_modals();	
+							}
+						}
+				?>
+
+				<!-- End Modals -->
+
+				<!-- Module_2 : Top Header -->
+				<?php echo ( $this->modules[2] ? $this->modules[2]->render() : '' ); ?>
+
+				<div class="main-container col2-left-layout">
+
+					<!-- Module_3 : Product Scroller -->
+					<?php echo ( $this->modules[3] ? $this->modules[3]->render() : '' ); ?>
+
+					<div class="main">
+                		<div class="col-main">
+							<div class="container">
+								<div class="clearfloat"></div>
+								<!-- Add ContentSlider -->
+                                <!-- End ContentSlider -->
+                        		<div class="std">
+
+									<div class="bg-container">
+									    <div class="category-title page-title">
+									        <h1><span class="color">Отличный</span> выбор!</h1>
+									    </div>
+								    	<div class="grid-text">
+								        	<p>Ознакомтесь с рекомендуемыми товарами для покупки:</p>
+										</div>
+
+										<!-- Module_4 : Featured Products -->
+										<?php echo ( $this->modules[4] ? $this->modules[4]->render() : '' ); ?>
+
+        								<div class="clearfloat"></div>
+									</div>
+									<div class="bg-container-end"></div>
+
+<script type="text/javascript">
+
+	var $j = jQuery.noConflict();
+	$j(document).ready(function(){
+		$j(".product-info-col").each(function(){
+			var link = $j("a:eq(0)", this).attr('href');
+			$j(".rating-links a:first", this).attr("href", link + "#reviews");
+			$j(".rating-links a:last", this).attr("href", link + "#review-form");
+		});
+	});
+
+</script>
+
+								</div>
+							</div>
+							<div class="col-main-end"></div>
+                		</div>
+
+						<!-- Left Column -->
+
+                		<div class="col-left sidebar">
+
+							<!-- Module_5 : Left Side Menu -->
+							<?php echo ( $this->modules[5] ? $this->modules[5]->render() : '' ); ?>
+
+							<!-- Module_6 : Left Side Menu -->
+							<?php echo ( $this->modules[6] ? $this->modules[6]->render() : '' ); ?>
+
+							<!-- Module_7 : Left Cart -->
+							<?php echo ( $this->modules[7] ? $this->modules[7]->render() : '' ); ?>
+
+							<!-- Module_8 : Left Newsletter -->
+							<?php echo ( $this->modules[8] ? $this->modules[8]->render() : '' ); ?>
+
+							<!-- Module_9 : Left Compare Products -->
+							<?php echo ( $this->modules[9] ? $this->modules[9]->render() : '' ); ?>
+
+						</div>
+					</div>
+				</div>
+
+				<!-- Module_10 : Footer. Последние просмотренные товары -->
+				<?php echo ( $this->modules[10] ? $this->modules[10]->render() : '' ); ?>
+
+				<!-- Module_11 : Footer. Брэнды -->
+				<?php echo ( $this->modules[11] ? $this->modules[11]->render() : '' ); ?>
+
+<script type="text/javascript">
+
+	var $j = jQuery.noConflict();
+	$j(document).ready(function() {
+		$j('.top-link').click(function(){
+			$j('html, body').animate({scrollTop:0}, 'fast');
+		});
+	});
+
+</script>
+
+				<div class="footer-wrapper">
+					<div class="footer">
+						<a href="javascript:void(0);" class="top-link">Вверх</a>
+
+<script type="text/javascript">
+
+	jQuery(document).ready(function(){
+		jQuery('a.footercart').rokmagemodal({ 
+			rokmagemodalcontainer: "#rokmage-header-cart",
+			overlayopacity       : 0.2,
+			overlayinspeed       : 300,
+			modalpreposition     : {"top":"43%"},
+			modalpauseb4entry    : 200,
+			modalentryanimation  : {"top": "50%", "opacity": "1"},
+			modalentryspeed      : 550,
+			modalexitanimation   : {"top": "55%", "opacity": "0"},
+			modalexitspeed       : 350,
+			pauseb4overlayfadeout: 500,
+			overlayoutspeed      : 200 
+		});
+	});
+
+</script>
+
+						<div id="rokmage-footer-lists">
+
+							<!-- Module_12 : Footer -->
+							<?php echo ( $this->modules[12] ? $this->modules[12]->render() : '' ); ?>
+
+							<!-- Module_13 : Footer -->
+							<?php echo ( $this->modules[13] ? $this->modules[13]->render() : '' ); ?>
+
+							<!-- Module_14 : Footer -->
+							<?php echo ( $this->modules[14] ? $this->modules[14]->render() : '' ); ?>
+
+							<div id="rokmage-footer-text">
+								<h3><span class="color">Консультации</span></h3>
+								<p>Наши консультанты ответят на все Ваши вопросы и дадут совет, на что обратить внимание при покупке. Надеемся, что с нашей помощью покупка швейной машины, оверлока или другого оборудования станет приятным событием, и Вы непременно обратитесь к нам еще раз.</p>
+							</div>
+						</div>
+						<div class="clearfloat"></div>
+
+						<!--  -->
+
+						<div id="footer-bottom">
+
+							<!-- Module_15 : Footer -->
+							<?php echo ( $this->modules[15] ? $this->modules[15]->render() : '' ); ?>
+
+						</div>
+
+						<!--  -->
+
+						<div class="footer-bottom-inner">
+							<div id="copyright">&copy; 2011 Интернет-магазин Shwei.Ru</div>
+							<div id="rocketlogo"><a id="rocket" title="Веб-студия StyleLab" href="http://www.stylelab.org/"></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page-end"></div>
+		</div>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter13515944 = new Ya.Metrika({id:13515944,
+                    clickmap:true,
+                    accurateTrackBounce:true});
+        } catch(e) {}
+    });
+    
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/13515944" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30499938-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	</body>
+</html>

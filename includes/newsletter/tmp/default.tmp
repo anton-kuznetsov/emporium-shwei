@@ -1,0 +1,25 @@
+<div class="block block-subscribe">
+	<div class="block-title">
+		<strong><span><span class="color">Рассылка</span></span></strong>
+	</div>
+	<form action="/" method="post" id="newsletter-validate-detail">
+		<div class="block-content">
+			<label for="newsletter">Подпишитесь на нашу рассылку:</label>
+			<div class="input-box">
+				<input type="text" name="email" id="newsletter" title="Подпишитесь на нашу рассылку" class="input-text required-entry validate-email" />
+			</div>
+			<div class="actions">
+				<button type="submit" title="Подписаться" class="button"><span><span>Подписаться</span></span></button>
+			</div>
+		</div>
+	</form>
+
+<script type="text/javascript">
+
+//<![CDATA[
+	var newsletterSubscriberFormDetail = new VarienForm('newsletter-validate-detail');
+//]]>
+
+</script>
+
+</div>

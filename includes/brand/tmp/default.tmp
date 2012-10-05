@@ -1,0 +1,151 @@
+<div class="page-title">
+    <h1><?php echo $html_title_page; ?></h1>
+</div>
+<div id="info" class="additional info_page">
+	<div class="info-brand-container">
+		<div class="brand-logo-col">
+			<img src="<?php echo $site_root . $data['logo']; ?>" width="170" alt="<?php echo $data['label']; ?>" />
+		</div>
+		<div class="brand-info-col">
+			<table class="data-table" id="contacts-service-center-table" >
+				<col width="25%" />
+				<col />
+				<tbody>
+					<tr>
+						<th class="label">Компания</th>
+						<td class="data"><?php echo $data['company']; ?></td>
+					</tr>
+					<tr>
+						<th class="label">Страна</th>
+						<td class="data"><?php echo $data['country']; ?></td>
+					</tr>
+					<tr>
+						<th class="label">Официальный сайт</th>
+						<td class="data"><a href="<?php echo $data['site']; ?>" title="<?php echo $data['label']; ?>"><?php echo $data['site']; ?></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="clearfloat"></div>
+	</div>
+
+<script type="text/javascript">
+
+	decorateTable('contacts-service-center-table');
+
+</script>
+
+	<br />
+
+	<?php echo $data['description']; ?>
+
+	<h3>Рекомендуемые товары, выпускаемые под брендом <?php echo $data['label']; ?></h3>
+
+<script type="text/javascript">
+
+	var $j = jQuery.noConflict();
+	$j(document).ready(function(){
+
+        $j(".sorter .view-mode").css("display", "none");
+        $j("span.switch_thumb").css("display", "block");
+
+        $j("span.switch_thumb").click(function () {
+            $j("span.switch_thumb").toggleClass("swap");
+            $j("ul.display").fadeOut("fast", function() {
+                $j(this).fadeIn("fast").toggleClass("thumb_view").toggleClass("list");
+                // Undo equalized heights for list
+                $j('ul.list div.product-container').css("height","auto");
+                // Equalize all thumb heights on switch if list view default
+                var maxHeight = 0;
+                $j('ul.thumb_view div.product-container').each( function() {
+					maxHeight = Math.max(maxHeight, $j(this).height());
+				}).height(maxHeight);
+            });
+            $j.cookie('view_State', $j('ul.display').is('.thumb_view') ? 'list' : 'thumbs' );
+        });
+
+        // COOKIES
+        // view state
+        var view_State = $j.cookie('view_State');
+        // Set the user's selection for the viewState
+        if (view_State == 'thumbs') {
+            $j("ul.display").addClass("thumb_view");
+            $j("span.switch_thumb").addClass("swap");
+        };
+        if (view_State == 'list') {
+            $j("ul.display").removeClass("thumb_view");
+            $j("span.switch_thumb").removeClass("swap");
+        };
+    });
+
+</script>
+
+<script type="text/javascript">
+
+	var $j = jQuery.noConflict();
+
+	// Truncate
+	$j(function() {
+		$j('.truncate_grid_title').truncate({max_length: 50});
+		$j('.truncate_grid_desc').truncate({max_length: 150});
+	});
+
+	$j(document).ready(function(){
+        // Remove list class if thumbview
+        if ( $j("ul#products-list").hasClass("thumb_view") ) {
+        $j("ul#products-list").removeClass("list") };
+        // Equalize all thumb heights on switch if list view default
+        var maxHeight = 0;
+        $j('ul.thumb_view div.product-container').each( function() {
+			maxHeight = Math.max(maxHeight, $j(this).height());
+		}).height(maxHeight);
+        // Undo equalized heights for list
+        $j('ul.list div.product-container').css("height","auto");
+	});
+
+</script>
+
+	<div class="category-products">
+		<span id="switch_thumb" class="switch_thumb">Переключить вид</span>
+		<ul class="display list" id="products-list">
+
+<?php
+	foreach ($data['products'] as $item) {
+?>
+
+		<li class="item">
+        	<div class="product-container">
+            	<div class="product-image-col">
+                	<a class="product-image" href="<?php Product_UI::href(array( 'id_product' => $item['id'] )); ?>" title="<?php echo $item['label']; ?>">
+                    	<img src="<?php echo $item['href_image_90']; ?>" width="135" height="135" alt="<?php echo $item['label']; ?>" title="<?php echo $item['label']; ?>" /></a>
+					<button class="button" onclick="setLocation('<?php ShopingCart_UI::href(array( 'action' => 'add', 'id_product' => $item['id'], 'qty' => 1 ), 0, 0); ?>')"><span><span>В корзину</span></span></button>
+                </div>
+            	<div class="product-info-col">
+                	<h3 class="product-name truncate_grid_title"><a href="<?php Product_UI::href(array( 'id_product' => $item['id'] )); ?>" title="<?php echo $item['label']; ?>"><?php echo $item['label']; ?></a></h3>
+					<div class="ratings">
+						<div class="rating-box">
+							<div class="rating" style="width: 90%"></div>
+						</div>
+						<!-- <p class="rating-links">
+							<a href="/">1 Отзыв</a>
+							<span class="separator">|</span>
+							<a href="/">Добавить свой</a>
+						</p> -->
+					</div>
+					<div class="price-box"><span class="regular-price"><span class="price"><?php echo $item['price_str']; ?></span></span></div>
+                	<p class="product-desc truncate_grid_desc"><?php echo $item['features']; ?></p>
+                	<span class="addto"><a href="<?php Product_UI::href(array( 'id_product' => $item['id'] )); ?>" title="<?php echo $item['label']; ?>">Подробнее</a></span>
+					<!-- <span class="spacer-hide"> | </span>
+                    <span class="addto"><a href="/">В сравнение</a></span> -->
+            	</div>
+				<div class="clearfloat"></div>
+			</div>
+		</li>
+
+<?php
+	}
+?>
+
+		</ul>
+	</div>
+</div>

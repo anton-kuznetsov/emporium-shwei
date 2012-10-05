@@ -1,0 +1,72 @@
+<script type="text/javascript">
+
+	var $j = jQuery.noConflict();
+
+	// Scroller
+	$j(function() {
+	    $j("div.scrollable").scrollable({speed: 1000, size: 8});
+	});
+
+	// Truncate
+	$j(function() {
+		$j('.truncate').truncate({max_length: 36});
+	});
+
+</script>
+
+<script type="text/javascript">
+
+	var $j = jQuery.noConflict();
+
+	// Tooltip
+	$j(document).ready(function() {
+
+		// Add tooltip
+		$j(".product-image span[title]").tooltip({tip: "#dynatip",offset: [10, 2]});
+
+		// IE fixes
+        if (jQuery.browser.msie) {
+
+            // IE fix to remove original title and alt
+            $j('img.tooltipped').attr("alt","");
+            $j("img.tooltipped").hover(
+            function() { $j(this).attr("title",""); });
+
+            // IE fix to stop title from tooltip being shown
+            $j(".product-image span").hover(
+            function() { $j(this).attr("title",""); });
+        };
+	});
+
+</script>
+
+					<div id="dynatip">&nbsp;</div>
+					<div class="scrollable-container smallerize">
+					    <a class="prevPage"></a>
+					    <div class="scrollable">
+					        <div class="items">
+<?php
+
+	foreach ($data as $item) {
+
+?>
+		<div class="scroll-item-middle">
+			<div class="scroll-item-top">
+				<div class="scroll-item-bottom">
+					<a href="<?php Product_UI::href(array( 'id_product' => $item['product']['id'] )); ?>" class="product-image">
+						<img src="<?php echo $item['product']['href_image_90']; ?>" class="tooltipped" alt="<?php echo $item['product']['label']; ?>" />
+						<span class="round-m" title="<?php echo $item['product']['label']; ?>&lt;br/&gt;&lt;strong&gt;&lt;span class=&quot;price&quot;&gt;<?php echo $item['product']['price_str']; ?>&lt;/span&gt;&lt;/strong&gt;"></span></a>
+					<div class="clearfloat"></div>
+				</div>
+			</div>
+		</div>
+<?php
+
+	}
+
+?>
+							</div>
+						</div>
+						<a class="nextPage"></a>
+						<div class="clearfloat"></div>
+					</div>

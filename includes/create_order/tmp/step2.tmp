@@ -1,0 +1,85 @@
+<div class="product-view order-view">
+	<div class="page-title">
+		<h1><span class="color">Оформление заказа</span></h1>
+	</div>
+	<p>
+		Номер заказа: <?php echo $data['id']; ?><br />
+		Дата: <?php echo $data['dt_str']; ?>
+	</p>
+	<p>
+		<b>Заказчик</b><br />
+		ФИО: <?php echo $data['fio']; ?><br />
+		E-mail: <?php echo $data['email']; ?><br />
+		Телефон: <?php echo $data['phone']; ?>
+	</p>	
+
+	<!-- Таблица товаров -->
+	<table id="order-table" class="data-table order-table">
+		<col width="1" />
+		<col />
+		<col width="1" />
+		<col width="1" />
+		<col width="1" />
+		<thead>
+			<tr>
+				<th rowspan="1" class="a-center"><span class="nobr">№</span></th>
+				<th rowspan="1"><span class="nobr">Наименование</span></th>
+				<th colspan="1" class="a-center"><span class="nobr">Цена</span></th>
+				<th rowspan="1" class="a-center"><span class="nobr">Кол-во</span></th>
+				<th colspan="1" class="a-center"><span class="nobr">Сумма</span></th>
+			</tr>
+		</thead>
+		<tbody>
+
+<?php
+	$i = 0;
+	foreach ( $data['cart_items'] as $item ) {
+		$i++;
+?>
+
+		<tr>
+			<td class="a-center">
+				<?php echo $i; ?>
+			</td>
+			<td>
+				<?php echo $item['label']; ?>
+			</td>
+			<td class="a-right">
+				<span class="nobr"><?php echo $item['price_str']; ?></span>
+			</td>
+			<td class="a-center">
+				<?php echo $item['qty']; ?>
+			</td>
+			<td class="a-right">
+				<span class="nobr"><?php echo $item['subtotal_str']; ?></span>
+			</td>
+		</tr>
+
+<?php
+	}
+?>
+
+				</tbody>
+			</table>
+
+<script type="text/javascript">
+
+	decorateTable('order-table');
+
+</script>        
+
+	<br />
+	<p>
+		Сумма заказа: <b><?php echo $data['total_str']; ?></b>
+	</p>
+	<p>
+		<b>Менеджер по работе с клиентами</b><br />
+		Имя: <?php echo $data['client_manager']['fio']; ?><br />
+		Телефон: <?php echo $data['client_manager']['phone']; ?>
+	</p>
+
+	<div class="buttons-set">
+		<button class="button f-left" onclick="setLocation('<?php CreateOrder_UI::href(array( 'action' => 'back_to_step1', 'fio' => $data['fio'], 'email' => $data['email'], 'phone' => $data['phone'] ), 0, 1); ?>')"><span><span>Назад</span></span></button>
+		<button class="button" onclick="setLocation('<?php CreateOrder_UI::href(array( 'action' => 'done', 'id_order' => $data['id'] ), 0, 1); ?>')"><span><span>Подтвердить заказ</span></span></button>
+	</div>
+</div>

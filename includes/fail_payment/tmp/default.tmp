@@ -1,0 +1,11 @@
+<div class="page-title">
+    <h1><span class="color">Получен отказ от платежа</span></h1>
+</div>
+<div id="info" class="additional tab_content info_page">
+	<p>У Вас возникли трудности при работе с сервисом оплаты Robocassa?</p>
+	<p>Обратитесь к менеджеру по работе с клиентами.</p>
+	<p>
+		Имя: <?php echo $data['client_manager']['fio']; ?><br />
+		Телефон: <?php echo $data['client_manager']['phone']; ?>
+	</p>
+</div>

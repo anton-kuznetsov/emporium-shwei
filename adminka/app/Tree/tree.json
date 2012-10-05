@@ -1,0 +1,75 @@
+{
+	"text"     : "Root",
+	"id"       : "root",
+	"children" : [
+		{
+			"text" : "Товары",
+			"id"   : "products",
+			"href_panel" : "products/index.html",
+			"leaf" : false,
+			"cls"  : "folder",
+			"children" : [
+				{
+					"text" : "Ёжик",
+					"id"   : "yogik",
+					"href_panel" : "",
+					"leaf" : true,
+					"cls"  : "file"
+				}
+			]
+		},
+		{
+			"text" : "Статьи",
+			"id"   : "category_articles",
+			"href_panel" : "page_category_articles",
+			"leaf" : false,
+			"cls"  : "folder",
+			"children" : [
+				{
+					"text" : "Статьи",
+					"id"   : "articles",
+					"href_panel" : "page_articles",
+					"leaf" : true,
+					"cls"  : "folder"
+				},
+				{
+					"text" : "Акции",
+					"id"   : "actions",
+					"href_panel" : "page_actions",
+					"leaf" : true,
+					"cls"  : "folder"
+				},
+				{
+					"text" : "Скидки",
+					"id"   : "sales",
+					"href_panel" : "page_sales",
+					"leaf" : true,
+					"cls"  : "folder"
+				}
+			]
+		},
+		{
+			"text" : "Модули",
+			"id"   : "modules",
+			"href_panel" : "page_modules",
+			"leaf" : false,
+			"cls"  : "folder",
+			"children" : [
+				{
+					"text" : "Слайдер",
+					"id"   : "slider",
+					"href_panel" : "page_slider",
+					"leaf" : true,
+					"cls"  : "file"
+				},
+				{
+					"text" : "Карусель",
+					"id"   : "carusel",
+					"href_panel" : "page_carusel",
+					"leaf" : true,
+					"cls"  : "file"
+				}
+			]
+		}
+	]
+}

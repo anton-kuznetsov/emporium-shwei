@@ -1,0 +1,42 @@
+<script type="text/javascript">
+
+	var $j = jQuery.noConflict();
+
+	// Truncate
+	$j(function() {
+		$j('.truncate_list_title').truncate({max_length: 45});
+	});
+
+</script>
+
+<div class="footer-viewed-wrapper">
+	<div class="footer-viewed block">
+    	<div class="footer-viewed-title block-title">
+        	<strong><?php echo $this->title; ?></strong>
+    	</div>
+    	<div class="footer-viewed-content">
+        	<ol id="recently-viewed-items" class="block-related">
+<?php
+
+	foreach ($data as $item) {
+
+?>
+		<li class="item">
+			<a href="<?php Product_UI::href(array( 'id_product' => $item['id'] )); ?>" title="<?php echo $item['label']; ?>" class="product-image"><img src="<?php echo $item['href_image_50']; ?>" width="50" height="50" alt="<?php echo $item['label']; ?>" /></a>
+			<div class="product-details">
+				<p class="product-name"><a href="<?php Product_UI::href(array( 'id_product' => $item['id'] )); ?>" class="truncate_list_title"><?php echo $item['label']; ?></a></p>
+				<div class="price-box">
+					<span class="regular-price"><span class="price"><?php echo $item['price_str']; ?></span></span>
+				</div>
+			</div>
+		</li>
+<?php
+
+	}
+
+?>
+			</ol>
+			<div class="clearfloat"></div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,1496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE yml_catalog SYSTEM "shops.dtd">
+<yml_catalog date="2012-03-31 01:04">
+<shop>
+<name>Shwei.Ru</name>
+<company>Интернет-магазин Shwei.Ru, Чебоксары</company>
+<url>http://shwei.ru/</url>
+<platform>EasyShop</platform>
+<version>1.0</version>
+<agency>StyleLab.Org</agency>
+<email>shwei21@ya.ru</email>
+<currencies>
+<currency id="RUR" rate="1"/>
+</currencies>
+<categories>
+<category id="1">Швейные машины</category>
+<category id="2">Вязальные машины</category>
+<category id="3">Вышивальные машины</category>
+<category id="4">Оверлоки</category>
+<category id="5">Швейно-вышивальные машины</category>
+<category id="6" parentId="1">Pаспошивальные швейные машины</category>
+<category id="7" parentId="1">Компьютерные швейные машины</category>
+<category id="8" parentId="1">Механические швейные машины</category>
+<category id="9" parentId="1">Электронные швейные машины</category>
+<category id="10" parentId="2">Механические вязальные машины</category>
+<category id="11" parentId="2">Электронные вязальные машины</category>
+<category id="101">Аксессуары</category>
+<category id="102" parentId="101">Для вязальных машин</category>
+<category id="103" parentId="102">Ажурные каретки</category>
+<category id="104" parentId="102">Каталоги с рисунками</category>
+<category id="105" parentId="102">Перфокарты</category>
+<category id="106" parentId="102">Перфораторы</category>
+<category id="107" parentId="102">Каретки интарсии</category>
+<category id="108" parentId="102">Моталки пряжи</category>
+<category id="109" parentId="102">Столы для машинки</category>
+<category id="110" parentId="102">Устройства смены цвета</category>
+<category id="111" parentId="102">Программное обеспечение</category>
+<category id="112">Отпариватели</category>
+</categories>
+<local_delivery_cost>0</local_delivery_cost>
+<offers>
+<offer id="4" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=4</url>
+<price>6480</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p4.jpg</picture>
+<pickup>true</pickup>
+<vendor>Bernina</vendor>
+<model>Bernina Bernette E56</model>
+<description>Электромеханическая швейная машина, автоматическое определение размера петель, освещение рабочей зоны, 21 швейная операция, автоматическая обработка петли, рукавная платформа, отсек для аксессуаров</description>
+</offer>
+<offer id="5" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=5</url>
+<price>7290</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p5.jpg</picture>
+<pickup>true</pickup>
+<vendor>Bernina</vendor>
+<model>Bernina Bernette E66</model>
+<description>Электромеханическая швейная машина, плавная работа без вибрации, автоматическое определение размера петель, освещение рабочей зоны, 26 швейных операций, автоматическая обработка петли, оверлочная строчка</description>
+</offer>
+<offer id="6" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=6</url>
+<price>3990</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p6.jpg</picture>
+<pickup>true</pickup>
+<vendor>Elna</vendor>
+<model>Elna 1110</model>
+<description>Электромеханическая швейная машина, 3 швейные операции, полуавтоматическая обработка петли, рукавная платформа</description>
+</offer>
+<offer id="11" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=11</url>
+<price>6600</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p11.jpg</picture>
+<pickup>true</pickup>
+<vendor>Elna</vendor>
+<model>Elna 1130</model>
+<description>Электромеханическая швейная машина, 23 швейные операции, полуавтоматическая обработка петли, оверлочная строчка, рукавная платформа</description>
+</offer>
+<offer id="13" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=13</url>
+<price>7500</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p13.jpg</picture>
+<pickup>true</pickup>
+<vendor>Elna</vendor>
+<model>Elna 2600</model>
+<description>Электромеханическая швейная машина, плавная работа без вибрации, освещение рабочей зоны, 19 швейных операций, полуавтоматическая обработка петли, оверлочная строчка, рукавная платформа</description>
+</offer>
+<offer id="15" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=15</url>
+<price>8500</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p15.jpg</picture>
+<pickup>true</pickup>
+<vendor>Elna</vendor>
+<model>Elna 2800</model>
+<description>Электромеханическая швейная машина, плавная работа без вибрации, освещение рабочей зоны, 23 швейные операции, автоматическая обработка петли, оверлочная строчка, рукавная платформа</description>
+</offer>
+<offer id="18" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=18</url>
+<price>9500</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p18.jpg</picture>
+<pickup>true</pickup>
+<vendor>Elna</vendor>
+<model>Elna 3210</model>
+<description>Электромеханическая швейная машина, плавная работа без вибрации, освещение рабочей зоны, 19 швейных операций, легко справляется с толстыми тканями, автоматическая обработка петли, оверлочная строчка</description>
+</offer>
+<offer id="19" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=19</url>
+<price>3500</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p19.jpg</picture>
+<pickup>true</pickup>
+<vendor>Janome</vendor>
+<model>Janome Jem</model>
+<description>Электромеханическая швейная машина, освещение рабочей зоны, 11 швейных операций, полуавтоматическая обработка петли, рукавная платформа, отсек для аксессуаров</description>
+</offer>
+<offer id="20" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=20</url>
+<price>4400</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p20.jpg</picture>
+<pickup>true</pickup>
+<vendor>Janome</vendor>
+<model>Janome VS 50</model>
+<description>Электромеханическая швейная машина, 8 швейных операций, полуавтоматическая обработка петли, рукавная платформа, отсек для аксессуаров</description>
+</offer>
+<offer id="23" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=23</url>
+<price>4900</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p23.jpg</picture>
+<pickup>true</pickup>
+<vendor>Janome</vendor>
+<model>Janome Jem Gold / JG 408</model>
+<description>Электромеханическая швейная машина, плавная работа без вибрации, освещение рабочей зоны, 13 швейных операций, полуавтоматическая обработка петли, рукавная платформа, отсек для аксессуаров</description>
+</offer>
+<offer id="24" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=24</url>
+<price>4600</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p24.jpg</picture>
+<pickup>true</pickup>
+<vendor>Janome</vendor>
+<model>Janome VS 52</model>
+<description>Электромеханическая швейная машина, 15 швейных операций, полуавтоматическая обработка петли, рукавная платформа, отсек для аксессуаров</description>
+</offer>
+<offer id="25" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=25</url>
+<price>3400</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p25.jpg</picture>
+<pickup>true</pickup>
+<vendor>Janome</vendor>
+<model>Janome SK13</model>
+<description>Электромеханическая швейная машина, освещение рабочей зоны, 3 швейных операций, ручная обработка петли, оверлочная строчка, рукавная платформа, отсек для аксессуаров</description>
+</offer>
+<offer id="27" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=27</url>
+<price>3700</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p27.jpg</picture>
+<pickup>true</pickup>
+<vendor>Janome</vendor>
+<model>Janome My Style 100</model>
+<description>Электромеханическая швейная машина, плавная работа без вибрации, освещение рабочей зоны, 13 швейных операций, полуавтоматическая обработка петли, оверлочная строчка, рукавная платформа</description>
+</offer>
+<offer id="28" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=28</url>
+<price>3900</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p28.jpg</picture>
+<pickup>true</pickup>
+<vendor>Janome</vendor>
+<model>Janome JB-1108</model>
+<description>Электромеханическая швейная машина, автоматическое определение размера петель, освещение рабочей зоны, 8 швейных операций, полуавтоматическая обработка петли, оверлочная строчка, рукавная платформа</description>
+</offer>
+<offer id="31" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=31</url>
+<price>4423</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p31.jpg</picture>
+<pickup>true</pickup>
+<vendor>Janome</vendor>
+<model>Janome Sewist 509 / SE 507</model>
+<description>Электромеханическая швейная машина, плавная работа без вибрации, 7 швейных операций, полуавтоматическая обработка петли, рукавная платформа</description>
+</offer>
+<offer id="157" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=157</url>
+<price>10500</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>http://shwei.ru//upload/250x250/p157.jpg</picture>
+<pickup>true</pickup>
+<vendor>Bernina</vendor>
+<model>Bernina Bernette 610D</model>
+<description>Оверлок, 2/3/4-ниточный шов, ролевой шов, дифференциальная подача, скорость 1300 стежков/мин, вес 8.9 кг</description>
+</offer>
+<offer id="33" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=33</url>
+<price>5000</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p33.jpg</picture>
+<pickup>true</pickup>
+<vendor>Janome</vendor>
+<model>Janome VS 54S</model>
+<description>Электромеханическая швейная машина, освещение рабочей зоны, 15 швейных операций, автоматическая обработка петли, оверлочная строчка, рукавная платформа, отсек для аксессуаров</description>
+</offer>
+<offer id="35" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=35</url>
+<price>4800</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p35.jpg</picture>
+<pickup>true</pickup>
+<vendor>Janome</vendor>
+<model>Janome 450 / 450h</model>
+<description>Электромеханическая швейная машина, 15 швейных операций, полуавтоматическая обработка петли, оверлочная строчка, рукавная платформа, отсек для аксессуаров</description>
+</offer>
+<offer id="36" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=36</url>
+<price>4990</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p36.jpg</picture>
+<pickup>true</pickup>
+<vendor>Janome</vendor>
+<model>Janome 415 / 5515</model>
+<description>Электромеханическая швейная машина, автоматическое определение размера петель, освещение рабочей зоны, 15 швейных операций, полуавтоматическая обработка петли, рукавная платформа, стол для расширения рабочей зоны</description>
+</offer>
+<offer id="37" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=37</url>
+<price>5400</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p37.jpg</picture>
+<pickup>true</pickup>
+<vendor>Janome</vendor>
+<model>Janome VS 56S</model>
+<description>Электромеханическая швейная машина, 24 швейные операции, автоматическая обработка петли, оверлочная строчка, рукавная платформа, отсек для аксессуаров</description>
+</offer>
+<offer id="38" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=38</url>
+<price>5000</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p38.jpg</picture>
+<pickup>true</pickup>
+<vendor>Janome</vendor>
+<model>Janome L-394 / LE 22</model>
+<description>Электромеханическая швейная машина, освещение рабочей зоны, 21 швейная операция, полуавтоматическая обработка петли, оверлочная строчка, рукавная платформа, отсек для аксессуаров</description>
+</offer>
+<offer id="39" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=39</url>
+<price>5320</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p39.jpg</picture>
+<pickup>true</pickup>
+<vendor>Janome</vendor>
+<model>Janome 419S / 5519</model>
+<description>Электромеханическая швейная машина, освещение рабочей зоны, 19 швейных операций, автоматическая обработка петли, оверлочная строчка, рукавная платформа, стол для расширения рабочей зоны</description>
+</offer>
+<offer id="43" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=43</url>
+<price>5590</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p43.jpg</picture>
+<pickup>true</pickup>
+<vendor>Janome</vendor>
+<model>Janome 423S / 5522</model>
+<description>Электромеханическая швейная машина, автоматическое определение размера петель, освещение рабочей зоны, 23 швейные операции, автоматическая обработка петли, оверлочная строчка, рукавная платформа</description>
+</offer>
+<offer id="44" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=44</url>
+<price>5130</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p44.jpg</picture>
+<pickup>true</pickup>
+<vendor>Janome</vendor>
+<model>Janome Sewist 521 / SE 518</model>
+<description>Электромеханическая швейная машина, плавная работа без вибрации, автоматическое определение размера петель, освещение рабочей зоны, 19 швейных операций, полуавтоматическая обработка петли, оверлочная строчка</description>
+</offer>
+<offer id="47" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=47</url>
+<price>6000</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p47.jpg</picture>
+<pickup>true</pickup>
+<vendor>Janome</vendor>
+<model>Janome Sewist 525 S / SE 522</model>
+<description>Электромеханическая швейная машина, плавная работа без вибрации, автоматическое определение размера петель, освещение рабочей зоны, 23 швейные операции, автоматическая обработка петли, оверлочная строчка</description>
+</offer>
+<offer id="48" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=48</url>
+<price>6790</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p48.jpg</picture>
+<pickup>true</pickup>
+<vendor>Janome</vendor>
+<model>Janome My Excel 18W / My Excel 1221</model>
+<description>Электромеханическая швейная машина, плавная работа без вибрации, автоматическое определение размера петель, освещение рабочей зоны, 18 швейных операций, автоматическая обработка петли, оверлочная строчка</description>
+</offer>
+<offer id="49" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=49</url>
+<price>7188</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p49.jpg</picture>
+<pickup>true</pickup>
+<vendor>Janome</vendor>
+<model>Janome 7524A</model>
+<description>Электромеханическая швейная машина, плавная работа без вибрации, автоматическое определение размера петель, освещение рабочей зоны, 23 швейные операции, автоматическая обработка петли, оверлочная строчка</description>
+</offer>
+<offer id="50" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=50</url>
+<price>7200</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p50.jpg</picture>
+<pickup>true</pickup>
+<vendor>Janome</vendor>
+<model>Janome 7518A</model>
+<description>Электромеханическая швейная машина, плавная работа без вибрации, автоматическое определение размера петель, освещение рабочей зоны, 18 швейных операций, автоматическая обработка петли, оверлочная строчка</description>
+</offer>
+<offer id="52" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=52</url>
+<price>9990</price>
+<currencyId>RUR</currencyId>
+<categoryId>9</categoryId>
+<picture>http://shwei.ru//upload/250x250/p52.jpg</picture>
+<pickup>true</pickup>
+<vendor>Bernina</vendor>
+<model>Bernina Bernette E82e</model>
+<description>Электромеханическая швейная машина, плавная работа без вибрации, автоматическое определение размера петель, освещение рабочей зоны, 28 швейных операций, легко справляется с толстыми тканями, автоматическая обработка петли</description>
+</offer>
+<offer id="54" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=54</url>
+<price>10800</price>
+<currencyId>RUR</currencyId>
+<categoryId>9</categoryId>
+<picture>http://shwei.ru//upload/250x250/p54.jpg</picture>
+<pickup>true</pickup>
+<vendor>Elna</vendor>
+<model>Elna 3230</model>
+<description>Электромеханическая швейная машина, плавная работа без вибрации, освещение рабочей зоны, 25 швейных операций, легко справляется с толстыми тканями, автоматическая обработка петли, оверлочная строчка</description>
+</offer>
+<offer id="55" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=55</url>
+<price>8300</price>
+<currencyId>RUR</currencyId>
+<categoryId>9</categoryId>
+<picture>http://shwei.ru//upload/250x250/p55.jpg</picture>
+<pickup>true</pickup>
+<vendor>Janome</vendor>
+<model>Janome My Excel W23U</model>
+<description>Электронная швейная машина, плавная работа без вибрации, автоматическое определение размера петель, освещение рабочей зоны, 23 швейные операции, легко справляется с толстыми тканями, автоматическая обработка петли</description>
+</offer>
+<offer id="56" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=56</url>
+<price>8690</price>
+<currencyId>RUR</currencyId>
+<categoryId>9</categoryId>
+<picture>http://shwei.ru//upload/250x250/p56.jpg</picture>
+<pickup>true</pickup>
+<vendor>Janome</vendor>
+<model>Janome 7524E</model>
+<description>Электромеханическая швейная машина, плавная работа без вибрации, автоматическое определение размера петель, освещение рабочей зоны, 23 швейные операции, легко справляется с толстыми тканями, автоматическая обработка петли</description>
+</offer>
+<offer id="58" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=58</url>
+<price>13300</price>
+<currencyId>RUR</currencyId>
+<categoryId>7</categoryId>
+<picture>http://shwei.ru//upload/250x250/p58.jpg</picture>
+<pickup>true</pickup>
+<vendor>Bernina</vendor>
+<model>Bernina Bernette E92c</model>
+<description>Электронная швейная машина, плавная работа без вибрации, автоматическое определение размера петель, освещение рабочей зоны, 150 швейных операций, легко справляется с толстыми тканями, автоматическая обработка петли</description>
+</offer>
+<offer id="66" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=66</url>
+<price>25380</price>
+<currencyId>RUR</currencyId>
+<categoryId>7</categoryId>
+<picture>http://shwei.ru//upload/250x250/p66.jpg</picture>
+<pickup>true</pickup>
+<vendor>Bernina</vendor>
+<model>Bernina Activa 240</model>
+<description>Электронная швейная машина, освещение рабочей зоны, 99 швейных операций, автоматическая обработка петли, оверлочная строчка, дисплей, рукавная платформа</description>
+</offer>
+<offer id="158" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=158</url>
+<price>3400</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p158.jpg</picture>
+<pickup>true</pickup>
+<vendor>Janome</vendor>
+<model>Janome 843</model>
+<description>Электромеханическая швейная машина, освещение рабочей зоны, 4 швейные операции, ручная обработка петли, оверлочная строчка, рукавная платформа, отсек для аксессуаров</description>
+</offer>
+<offer id="159" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=159</url>
+<price>3400</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p159.jpg</picture>
+<pickup>true</pickup>
+<vendor>Janome</vendor>
+<model>Janome 943-05S</model>
+<description>Электромеханическая швейная машина, автоматическое определение размера петель, освещение рабочей зоны, 6 швейных операций, ручная обработка петли, оверлочная строчка, рукавная платформа</description>
+</offer>
+<offer id="160" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=160</url>
+<price>3400</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p160.jpg</picture>
+<pickup>true</pickup>
+<vendor>Janome</vendor>
+<model>Janome 1143</model>
+<description>Электромеханическая швейная машина, 4 швейные операции, ручная обработка петли, оверлочная строчка, рукавная платформа, отсек для аксессуаров</description>
+</offer>
+<offer id="64" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=64</url>
+<price>24354</price>
+<currencyId>RUR</currencyId>
+<categoryId>7</categoryId>
+<picture>http://shwei.ru//upload/250x250/p64.jpg</picture>
+<pickup>true</pickup>
+<vendor>Bernina</vendor>
+<model>Bernina Activa 230</model>
+<description>Электронная швейная машина, освещение рабочей зоны, 70 швейных операций, автоматическая обработка петли, оверлочная строчка, дисплей, рукавная платформа</description>
+</offer>
+<offer id="63" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=63</url>
+<price>21700</price>
+<currencyId>RUR</currencyId>
+<categoryId>7</categoryId>
+<picture>http://shwei.ru//upload/250x250/p63.jpg</picture>
+<pickup>true</pickup>
+<vendor>Bernina</vendor>
+<model>Bernina Activa 220</model>
+<description>Электронная швейная машина, освещение рабочей зоны, 50 швейных операций, полуавтоматическая обработка петли, оверлочная строчка, дисплей, рукавная платформа</description>
+</offer>
+<offer id="68" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=68</url>
+<price>12000</price>
+<currencyId>RUR</currencyId>
+<categoryId>7</categoryId>
+<picture>http://shwei.ru//upload/250x250/p68.jpg</picture>
+<pickup>true</pickup>
+<vendor>Bernina</vendor>
+<model>Bernina Aurora 1403</model>
+<description>Компьютерная швейная машина, освещение рабочей зоны, 150 швейных операций, автоматическая обработка петли, оверлочная строчка, дисплей, рукавная платформа</description>
+</offer>
+<offer id="69" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=69</url>
+<price>48500</price>
+<currencyId>RUR</currencyId>
+<categoryId>7</categoryId>
+<picture>http://shwei.ru//upload/250x250/p69.jpg</picture>
+<pickup>true</pickup>
+<vendor>Bernina</vendor>
+<model>Bernina Aurora 1405</model>
+<description></description>
+</offer>
+<offer id="71" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=71</url>
+<price>15500</price>
+<currencyId>RUR</currencyId>
+<categoryId>7</categoryId>
+<picture>http://shwei.ru//upload/250x250/p71.jpg</picture>
+<pickup>true</pickup>
+<vendor>Elna</vendor>
+<model>Elna 6200</model>
+<description>Электромеханическая швейная машина, плавная работа без вибрации, освещение рабочей зоны, автоматическая обработка петли, оверлочная строчка, дисплей, рукавная платформа</description>
+</offer>
+<offer id="72" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=72</url>
+<price>9200</price>
+<currencyId>RUR</currencyId>
+<categoryId>7</categoryId>
+<picture>http://shwei.ru//upload/250x250/p72.jpg</picture>
+<pickup>true</pickup>
+<vendor>Janome</vendor>
+<model>Janome DC 4030</model>
+<description>Электронная швейная машина, плавная работа без вибрации, автоматическое определение размера петель, освещение рабочей зоны, 30 швейных операций, легко справляется с толстыми тканями, автоматическая обработка петли</description>
+</offer>
+<offer id="73" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=73</url>
+<price>18100</price>
+<currencyId>RUR</currencyId>
+<categoryId>7</categoryId>
+<picture>http://shwei.ru//upload/250x250/p73.jpg</picture>
+<pickup>true</pickup>
+<vendor>Janome</vendor>
+<model>Janome DC 3050 / DC 50</model>
+<description>Электронная швейная машина, плавная работа без вибрации, автоматическое определение размера петель, освещение рабочей зоны, 50 швейных операций, автоматическая обработка петли, оверлочная строчка</description>
+</offer>
+<offer id="74" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=74</url>
+<price>25190</price>
+<currencyId>RUR</currencyId>
+<categoryId>7</categoryId>
+<picture>http://shwei.ru//upload/250x250/p74.jpg</picture>
+<pickup>true</pickup>
+<vendor>Janome</vendor>
+<model>Janome 6260QC / QC2325</model>
+<description>Электронная швейная машина, плавная работа без вибрации, автоматическое определение размера петель, освещение рабочей зоны, 60 швейных операций, легко справляется с толстыми тканями, автоматическая обработка петли</description>
+</offer>
+<offer id="75" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=75</url>
+<price>24500</price>
+<currencyId>RUR</currencyId>
+<categoryId>7</categoryId>
+<picture>http://shwei.ru//upload/250x250/p75.jpg</picture>
+<pickup>true</pickup>
+<vendor>Janome</vendor>
+<model>Janome DC 3600</model>
+<description>Компьютерная швейная машина, плавная работа без вибрации, освещение рабочей зоны, 100 швейных операций, автоматическая обработка петли, оверлочная строчка, дисплей</description>
+</offer>
+<offer id="76" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=76</url>
+<price>18100</price>
+<currencyId>RUR</currencyId>
+<categoryId>7</categoryId>
+<picture>http://shwei.ru//upload/250x250/p76.jpg</picture>
+<pickup>true</pickup>
+<vendor>Janome</vendor>
+<model>Janome Memory Craft 5200</model>
+<description>Электронная швейная машина, плавная работа без вибрации, автоматическое определение размера петель, освещение рабочей зоны, 561 швейных операций, легко справляется с толстыми тканями, автоматическая обработка петли</description>
+</offer>
+<offer id="77" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=77</url>
+<price>19220</price>
+<currencyId>RUR</currencyId>
+<categoryId>7</categoryId>
+<picture>http://shwei.ru//upload/250x250/p77.jpg</picture>
+<pickup>true</pickup>
+<vendor>Janome</vendor>
+<model>Janome Memory Craft 4900 QC</model>
+<description>Электронная швейная машина, плавная работа без вибрации, автоматическое определение размера петель, освещение рабочей зоны, 211 швейная операция, автоматическая обработка петли, оверлочная строчка</description>
+</offer>
+<offer id="78" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=78</url>
+<price>25190</price>
+<currencyId>RUR</currencyId>
+<categoryId>7</categoryId>
+<picture>http://shwei.ru//upload/250x250/p78.jpg</picture>
+<pickup>true</pickup>
+<vendor>Janome</vendor>
+<model>Janome Memory Craft 6600P</model>
+<description>Электронная швейная машина, плавная работа без вибрации, автоматическое определение размера петель, освещение рабочей зоны, 152 швейные операции, автоматическая обработка петли, оверлочная строчка</description>
+</offer>
+<offer id="79" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=79</url>
+<price>12990</price>
+<currencyId>RUR</currencyId>
+<categoryId>10</categoryId>
+<picture>http://shwei.ru//upload/250x250/p79.jpg</picture>
+<pickup>true</pickup>
+<vendor>Silver Reed</vendor>
+<model>Silver Reed LK150</model>
+<description>Однофонтурная вязальная машина 4 класса</description>
+</offer>
+<offer id="80" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=80</url>
+<price>12000</price>
+<currencyId>RUR</currencyId>
+<categoryId>7</categoryId>
+<picture>http://shwei.ru//upload/250x250/p80.jpg</picture>
+<pickup>true</pickup>
+<vendor>Elna</vendor>
+<model>Elna 5200</model>
+<description>Электронная швейная машина, плавная работа без вибрации, освещение рабочей зоны, 30 швейных операций, легко справляется с толстыми тканями, автоматическая обработка петли, оверлочная строчка</description>
+</offer>
+<offer id="81" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=81</url>
+<price>13000</price>
+<currencyId>RUR</currencyId>
+<categoryId>7</categoryId>
+<picture>http://shwei.ru//upload/250x250/p81.jpg</picture>
+<pickup>true</pickup>
+<vendor>Elna</vendor>
+<model>Elna 5300</model>
+<description>Электронная швейная машина, плавная работа без вибрации, автоматическое определение размера петель, освещение рабочей зоны, 50 швейных операций, легко справляется с толстыми тканями, автоматическая обработка петли</description>
+</offer>
+<offer id="82" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=82</url>
+<price>222000</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>http://shwei.ru//upload/250x250/p82.jpg</picture>
+<pickup>true</pickup>
+<vendor>Bernina</vendor>
+<model>Bernina 830</model>
+<description>Компьютерная швейная машина, вышивальный блок в комплекте, шитье в нескольких направлениях, автоматическое определение размера петель, освещение рабочей зоны, 1162 швейных операций, легко справляется с толстыми тканями</description>
+</offer>
+<offer id="84" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=84</url>
+<price>112000</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>http://shwei.ru//upload/250x250/p84.jpg</picture>
+<pickup>true</pickup>
+<vendor>Bernina</vendor>
+<model>Bernina Artista 640</model>
+<description>Компьютерная швейная машина, плавная работа без вибрации, автоматическое определение размера петель, освещение рабочей зоны, 570 швейных операций, автоматическая обработка петли, оверлочная строчка</description>
+</offer>
+<offer id="85" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=85</url>
+<price>48500</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>http://shwei.ru//upload/250x250/p85.jpg</picture>
+<pickup>true</pickup>
+<vendor>Bernina</vendor>
+<model>Bernina Aurora 450</model>
+<description>Компьютерная швейная машина, плавная работа без вибрации, шитье в нескольких направлениях, автоматическое определение размера петель, освещение рабочей зоны, 163 швейные операции, легко справляется с толстыми тканями</description>
+</offer>
+<offer id="86" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=86</url>
+<price>24500</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>http://shwei.ru//upload/250x250/p86.jpg</picture>
+<pickup>true</pickup>
+<vendor>Janome</vendor>
+<model>Janome Memory Craft 350E</model>
+<description>Наглядный экран, большой размер вышивки, 100 новых встроенных вышивальных дизайнов</description>
+</offer>
+<offer id="88" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=88</url>
+<price>10700</price>
+<currencyId>RUR</currencyId>
+<categoryId>6</categoryId>
+<picture>http://shwei.ru//upload/250x250/p88.jpg</picture>
+<pickup>true</pickup>
+<vendor>Janome</vendor>
+<model>Janome CoverPro 1000CP (CoverPro II)</model>
+<description>Коверлок, 3/4-ниточный шов, распошивочный шов, цепной стежок, дифференциальная подача, скорость 1000 стежков/мин, вес 8 кг</description>
+</offer>
+<offer id="94" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=94</url>
+<price>17990</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>http://shwei.ru//upload/250x250/p94.jpg</picture>
+<pickup>true</pickup>
+<vendor>Bernina</vendor>
+<model>Bernina 1150MDA</model>
+<description>Оверлок, 2/3/4-ниточный шов, ролевой шов, дифференциальная подача, скорость 1500 стежков/мин, вес 8.4 кг</description>
+</offer>
+<offer id="92" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=92</url>
+<price>13230</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>http://shwei.ru//upload/250x250/p89.jpg</picture>
+<pickup>true</pickup>
+<vendor>Bernina</vendor>
+<model>Bernina 870D (700D)</model>
+<description>Оверлок, 3/4-ниточный шов, дифференциальная подача, вес 8.2 кг</description>
+</offer>
+<offer id="93" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=93</url>
+<price>15930</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>http://shwei.ru//upload/250x250/p93.jpg</picture>
+<pickup>true</pickup>
+<vendor>Bernina</vendor>
+<model>Bernina 880DL</model>
+<description>Оверлок, 2/3/4-ниточный шов, ролевой шов, дифференциальная подача, скорость 1500 стежков/мин, вес 8.2 кг</description>
+</offer>
+<offer id="95" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=95</url>
+<price>6200</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>http://shwei.ru//upload/250x250/p95.jpg</picture>
+<pickup>true</pickup>
+<vendor>Janome</vendor>
+<model>Janome MyLock 205D (HQ090D)</model>
+<description>Оверлок, 3/4-ниточный шов, ролевой шов, дифференциальная подача, скорость 1300 стежков/мин, вес 8 кг</description>
+</offer>
+<offer id="96" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=96</url>
+<price>8900</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>http://shwei.ru//upload/250x250/p96.jpg</picture>
+<pickup>true</pickup>
+<vendor>Janome</vendor>
+<model>Janome MyLock 714D (644D)</model>
+<description>Оверлок, 2/3/4-ниточный шов, ролевой шов, дифференциальная подача, скорость 1300 стежков/мин, вес 9 кг</description>
+</offer>
+<offer id="97" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=97</url>
+<price>9100</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>http://shwei.ru//upload/250x250/p97.jpg</picture>
+<pickup>true</pickup>
+<vendor>Janome</vendor>
+<model>Janome MyLock 784D (744D)</model>
+<description>Оверлок, 2/3/4-ниточный шов, ролевой шов, дифференциальная подача, скорость 1300 стежков/мин, вес 9 кг</description>
+</offer>
+<offer id="98" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=98</url>
+<price>35600</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>http://shwei.ru//upload/250x250/p98.jpg</picture>
+<pickup>true</pickup>
+<vendor>Bernina</vendor>
+<model>Bernina 1300MDC</model>
+<description>Оверлок, 2/3/4/5-ниточный шов, ролевой шов, цепной стежок, дифференциальная подача, скорость 1500 стежков/мин, дисплей</description>
+</offer>
+<offer id="100" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=100</url>
+<price>32373</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>http://shwei.ru//upload/250x250/p100.jpg</picture>
+<pickup>true</pickup>
+<vendor>Bernina</vendor>
+<model>Bernina 2500DCET</model>
+<description>Коверлок, 2/3/4/5-ниточный шов, ролевой шов, распошивочный шов, цепной стежок, дифференциальная подача, скорость 1500 стежков/мин</description>
+</offer>
+<offer id="103" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=103</url>
+<price>28900</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>http://shwei.ru//upload/250x250/p103.jpg</picture>
+<pickup>true</pickup>
+<vendor>Elna</vendor>
+<model>Elna 845</model>
+<description>Коверлок, 2/3/4/5-ниточный шов, ролевой шов, распошивочный шов, цепной стежок, дифференциальная подача, скорость 1300 стежков/мин</description>
+</offer>
+<offer id="102" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=102</url>
+<price>23500</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>http://shwei.ru//upload/250x250/p102.jpg</picture>
+<pickup>true</pickup>
+<vendor>Elna</vendor>
+<model>Elna 745</model>
+<description>Коверлок, 2/3/4/5-ниточный шов, ролевой шов, распошивочный шов, цепной стежок, дифференциальная подача, скорость 1300 стежков/мин</description>
+</offer>
+<offer id="104" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=104</url>
+<price>22550</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>http://shwei.ru//upload/250x250/p104.jpg</picture>
+<pickup>true</pickup>
+<vendor>Janome</vendor>
+<model>Janome 1200D</model>
+<description>Коверлок, 2/3/4/5-ниточный шов, ролевой шов, распошивочный шов, цепной стежок, дифференциальная подача, скорость 1300 стежков/мин</description>
+</offer>
+<offer id="105" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=105</url>
+<price>29990</price>
+<currencyId>RUR</currencyId>
+<categoryId>10</categoryId>
+<picture>http://shwei.ru//upload/250x250/p105.jpg</picture>
+<pickup>true</pickup>
+<vendor>Silver Reed</vendor>
+<model>Silver Reed SK155</model>
+<description></description>
+</offer>
+<offer id="106" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=106</url>
+<price>35900</price>
+<currencyId>RUR</currencyId>
+<categoryId>10</categoryId>
+<picture>http://shwei.ru//upload/250x250/p106.jpg</picture>
+<pickup>true</pickup>
+<vendor>Silver Reed</vendor>
+<model>Silver Reed SK 280 / SRP 60 N</model>
+<description></description>
+</offer>
+<offer id="107" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=107</url>
+<price>45900</price>
+<currencyId>RUR</currencyId>
+<categoryId>11</categoryId>
+<picture>http://shwei.ru//upload/250x250/p107.jpg</picture>
+<pickup>true</pickup>
+<vendor>Silver Reed</vendor>
+<model>Silver Reed SK 840 / SRP 60 N</model>
+<description>Электронная двухфонтурная вязальная машина 5-го класса, 200 игл, расстояние между иглами 4,5 мм.</description>
+</offer>
+<offer id="108" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=108</url>
+<price>8420</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>http://shwei.ru//upload/250x250/p108.jpg</picture>
+<pickup>true</pickup>
+<vendor>AstraLux</vendor>
+<model>AstraLux 822D</model>
+<description>Оверлок, 2/3/4-ниточный шов, ролевой шов, дифференциальная подача, скорость 1250 стежков/мин, вес 7 кг</description>
+</offer>
+<offer id="109" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=109</url>
+<price>3503</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p109.jpg</picture>
+<pickup>true</pickup>
+<vendor>AstraLux</vendor>
+<model>AstraLux 150</model>
+<description>Электромеханическая швейная машина, освещение рабочей зоны, 17 швейных операций, полуавтоматическая обработка петли, оверлочная строчка, рукавная платформа, отсек для аксессуаров</description>
+</offer>
+<offer id="110" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=110</url>
+<price>3920</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p110.jpg</picture>
+<pickup>true</pickup>
+<vendor>AstraLux</vendor>
+<model>AstraLux 100</model>
+<description>Электромеханическая швейная машина, освещение рабочей зоны, 9 швейных операций, полуавтоматическая обработка петли, оверлочная строчка, рукавная платформа, отсек для аксессуаров</description>
+</offer>
+<offer id="111" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=111</url>
+<price>5000</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p111.jpg</picture>
+<pickup>true</pickup>
+<vendor>AstraLux</vendor>
+<model>AstraLux SR-38</model>
+<description>Электромеханическая швейная машина, освещение рабочей зоны, 23 швейные операции, полуавтоматическая обработка петли, оверлочная строчка, рукавная платформа, отсек для аксессуаров</description>
+</offer>
+<offer id="112" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=112</url>
+<price>4120</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p112.jpg</picture>
+<pickup>true</pickup>
+<vendor>AstraLux</vendor>
+<model>AstraLux 541</model>
+<description>Электромеханическая швейная машина, плавная работа без вибрации, освещение рабочей зоны, 23 швейные операции, полуавтоматическая обработка петли, оверлочная строчка, рукавная платформа</description>
+</offer>
+<offer id="113" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=113</url>
+<price>5870</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p113.jpg</picture>
+<pickup>true</pickup>
+<vendor>AstraLux</vendor>
+<model>AstraLux SR-36VP</model>
+<description>Электромеханическая швейная машина, освещение рабочей зоны, 32 швейные операции, полуавтоматическая обработка петли, оверлочная строчка, рукавная платформа, отсек для аксессуаров</description>
+</offer>
+<offer id="114" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=114</url>
+<price>5500</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p114.jpg</picture>
+<pickup>true</pickup>
+<vendor>AstraLux</vendor>
+<model>AstraLux 2326</model>
+<description>Электромеханическая швейная машина, освещение рабочей зоны, 26 швейных операций, автоматическая обработка петли, оверлочная строчка, рукавная платформа, отсек для аксессуаров</description>
+</offer>
+<offer id="115" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=115</url>
+<price>6800</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p115.jpg</picture>
+<pickup>true</pickup>
+<vendor>AstraLux</vendor>
+<model>AstraLux 4032</model>
+<description>Электромеханическая швейная машина, плавная работа без вибрации, освещение рабочей зоны, 34 швейные операции, автоматическая обработка петли, оверлочная строчка, рукавная платформа</description>
+</offer>
+<offer id="116" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=116</url>
+<price>6800</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p116.jpg</picture>
+<pickup>true</pickup>
+<vendor>AstraLux</vendor>
+<model>AstraLux XP-40</model>
+<description>Электромеханическая швейная машина, плавная работа без вибрации, освещение рабочей зоны, 14 швейных операций, автоматическая обработка петли, оверлочная строчка, рукавная платформа</description>
+</offer>
+<offer id="117" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=117</url>
+<price>6060</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p117.jpg</picture>
+<pickup>true</pickup>
+<vendor>AstraLux</vendor>
+<model>AstraLux XP-41</model>
+<description>Электромеханическая швейная машина, плавная работа без вибрации, освещение рабочей зоны, 29 швейных операций, автоматическая обработка петли, оверлочная строчка, рукавная платформа</description>
+</offer>
+<offer id="118" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=118</url>
+<price>7900</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p118.jpg</picture>
+<pickup>true</pickup>
+<vendor>AstraLux</vendor>
+<model>AstraLux 700</model>
+<description>Электромеханическая швейная машина, плавная работа без вибрации, освещение рабочей зоны, 35 швейных операций, автоматическая обработка петли, оверлочная строчка, рукавная платформа</description>
+</offer>
+<offer id="119" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=119</url>
+<price>11774</price>
+<currencyId>RUR</currencyId>
+<categoryId>7</categoryId>
+<picture>http://shwei.ru//upload/250x250/p119.jpg</picture>
+<pickup>true</pickup>
+<vendor>AstraLux</vendor>
+<model>Astralux 7100</model>
+<description>Электронная швейная машина, плавная работа без вибрации, освещение рабочей зоны, 100 швейных операций, автоматическая обработка петли, оверлочная строчка, дисплей</description>
+</offer>
+<offer id="120" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=120</url>
+<price>13000</price>
+<currencyId>RUR</currencyId>
+<categoryId>7</categoryId>
+<picture>http://shwei.ru//upload/250x250/p120.jpg</picture>
+<pickup>true</pickup>
+<vendor>AstraLux</vendor>
+<model>AstraLux 7200</model>
+<description>Электронная швейная машина, плавная работа без вибрации, освещение рабочей зоны, 276 швейных операций, легко справляется с толстыми тканями, автоматическая обработка петли, оверлочная строчка</description>
+</offer>
+<offer id="121" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=121</url>
+<price>7500</price>
+<currencyId>RUR</currencyId>
+<categoryId>7</categoryId>
+<picture>http://shwei.ru//upload/250x250/p121.jpg</picture>
+<pickup>true</pickup>
+<vendor>AstraLux</vendor>
+<model>AstraLux 9500</model>
+<description>Электронная швейная машина, плавная работа без вибрации, освещение рабочей зоны, 60 швейных операций, автоматическая обработка петли, оверлочная строчка, дисплей</description>
+</offer>
+<offer id="122" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=122</url>
+<price>12100</price>
+<currencyId>RUR</currencyId>
+<categoryId>7</categoryId>
+<picture>http://shwei.ru//upload/250x250/p122.jpg</picture>
+<pickup>true</pickup>
+<vendor>AstraLux</vendor>
+<model>AstraLux 9700 / 9710</model>
+<description>Электронная швейная машина, плавная работа без вибрации, освещение рабочей зоны, 351 швейная операция, автоматическая обработка петли, оверлочная строчка, дисплей</description>
+</offer>
+<offer id="123" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=123</url>
+<price>10240</price>
+<currencyId>RUR</currencyId>
+<categoryId>7</categoryId>
+<picture>http://shwei.ru//upload/250x250/p123.jpg</picture>
+<pickup>true</pickup>
+<vendor>AstraLux</vendor>
+<model>AstraLux 9800 / 9810</model>
+<description>Электронная швейная машина, плавная работа без вибрации, освещение рабочей зоны, 265 швейных операций, автоматическая обработка петли, оверлочная строчка, дисплей</description>
+</offer>
+<offer id="124" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=124</url>
+<price>26500</price>
+<currencyId>RUR</currencyId>
+<categoryId>7</categoryId>
+<picture>http://shwei.ru//upload/250x250/p124.jpg</picture>
+<pickup>true</pickup>
+<vendor>AstraLux</vendor>
+<model>AstraLux R20</model>
+<description>Электронная швейная машина, плавная работа без вибрации, шитье в нескольких направлениях, автоматическое определение размера петель, освещение рабочей зоны, 401 швейная операция, легко справляется с толстыми тканями</description>
+</offer>
+<offer id="125" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=125</url>
+<price>7700</price>
+<currencyId>RUR</currencyId>
+<categoryId>9</categoryId>
+<picture>http://shwei.ru//upload/250x250/p125.jpg</picture>
+<pickup>true</pickup>
+<vendor>AstraLux</vendor>
+<model>AstraLux XP-45</model>
+<description>Электронная швейная машина, плавная работа без вибрации, освещение рабочей зоны, 29 швейных операций, автоматическая обработка петли, оверлочная строчка, рукавная платформа</description>
+</offer>
+<offer id="126" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=126</url>
+<price>1550</price>
+<currencyId>RUR</currencyId>
+<categoryId>104</categoryId>
+<picture>http://shwei.ru//upload/250x250/p126.jpg</picture>
+<pickup>true</pickup>
+<vendor></vendor>
+<model>Каталог с рисунками для чистых перфокарт</model>
+<description>Большой каталог с образцами карт и красочными фото полученных узоров.</description>
+</offer>
+<offer id="127" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=127</url>
+<price>1580</price>
+<currencyId>RUR</currencyId>
+<categoryId>105</categoryId>
+<picture>http://shwei.ru//upload/250x250/p127.jpg</picture>
+<pickup>true</pickup>
+<vendor></vendor>
+<model>Набор чистых перфокарт</model>
+<description></description>
+</offer>
+<offer id="128" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=128</url>
+<price>1260</price>
+<currencyId>RUR</currencyId>
+<categoryId>106</categoryId>
+<picture>http://shwei.ru//upload/250x250/p128.jpg</picture>
+<pickup>true</pickup>
+<vendor></vendor>
+<model>Перфоратор</model>
+<description></description>
+</offer>
+<offer id="129" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=129</url>
+<price>2890</price>
+<currencyId>RUR</currencyId>
+<categoryId>107</categoryId>
+<picture>http://shwei.ru//upload/250x250/p129.jpg</picture>
+<pickup>true</pickup>
+<vendor></vendor>
+<model>Каретка интарсия AG-24</model>
+<description>Устройство для вывязывания крупных рисунков со множеством цветов в одном ряду без протяжек с изнаночной стороны изделия. Для машин SK280, SK840.</description>
+</offer>
+<offer id="130" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=130</url>
+<price>1900</price>
+<currencyId>RUR</currencyId>
+<categoryId>108</categoryId>
+<picture>http://shwei.ru//upload/250x250/p130.jpg</picture>
+<pickup>true</pickup>
+<vendor></vendor>
+<model>Моталка</model>
+<description>Устройство для перематывания пряжи.</description>
+</offer>
+<offer id="131" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=131</url>
+<price>3000</price>
+<currencyId>RUR</currencyId>
+<categoryId>109</categoryId>
+<picture>http://shwei.ru//upload/250x250/p131.jpg</picture>
+<pickup>true</pickup>
+<vendor></vendor>
+<model>Стол для вязальной машины</model>
+<description>Для размещения вязальной машины необходим длинный, устойчивый столик</description>
+</offer>
+<offer id="132" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=132</url>
+<price>12000</price>
+<currencyId>RUR</currencyId>
+<categoryId>103</categoryId>
+<picture>http://shwei.ru//upload/250x250/p132.jpg</picture>
+<pickup>true</pickup>
+<vendor></vendor>
+<model>Ажурная каретка LC-2</model>
+<description>Устройство для вязания ажура для перфокартных вязальных машин 5-го класса</description>
+</offer>
+<offer id="133" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=133</url>
+<price>9700</price>
+<currencyId>RUR</currencyId>
+<categoryId>110</categoryId>
+<picture>http://shwei.ru//upload/250x250/p133.jpg</picture>
+<pickup>true</pickup>
+<vendor></vendor>
+<model>Устройство смены цвета YC-6</model>
+<description>Устройтво для вывязывания многоцветных фанговых переплетений, норвежского и двойного жаккарда. Для машин SK 280, SK 270, SK 840</description>
+</offer>
+<offer id="134" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=134</url>
+<price>15000</price>
+<currencyId>RUR</currencyId>
+<categoryId>103</categoryId>
+<picture>http://shwei.ru//upload/250x250/p134.jpg</picture>
+<pickup>true</pickup>
+<vendor></vendor>
+<model>Ажурная каретка 580 LACE</model>
+<description>Устройство для вязания ажура. 5 класс вязальных машин.</description>
+</offer>
+<offer id="136" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=136</url>
+<price>6</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p136.jpg</picture>
+<pickup>true</pickup>
+<vendor>AstraLux</vendor>
+<model>AstraLux 2216</model>
+<description>Электромеханическая швейная машина, освещение рабочей зоны, 18 швейных операций, автоматическая обработка петли, оверлочная строчка, рукавная платформа, отсек для аксессуаров</description>
+</offer>
+<offer id="138" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=138</url>
+<price>8800</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>http://shwei.ru//upload/250x250/p138.jpg</picture>
+<pickup>true</pickup>
+<vendor>Janome</vendor>
+<model>Janome MyLock 4952D</model>
+<description>Оверлок, 3/4-ниточный шов, ролевой шов, дифференциальная подача, скорость 1300 стежков/мин, вес 8 кг</description>
+</offer>
+<offer id="139" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=139</url>
+<price>8800</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>http://shwei.ru//upload/250x250/p139.jpg</picture>
+<pickup>true</pickup>
+<vendor>Janome</vendor>
+<model>Janome MyLock 4952 / 754</model>
+<description>Оверлок, 3/4-ниточный шов, ролевой шов, дифференциальная подача, скорость 1300 стежков/мин, вес 8 кг</description>
+</offer>
+<offer id="140" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=140</url>
+<price>6200</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>http://shwei.ru//upload/250x250/p140.jpg</picture>
+<pickup>true</pickup>
+<vendor>Janome</vendor>
+<model>Janome MyLock 9002D</model>
+<description>Оверлок, 3/4-ниточный шов, ролевой шов, дифференциальная подача, скорость 1300 стежков/мин, вес 8 кг</description>
+</offer>
+<offer id="141" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=141</url>
+<price>3400</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p141.jpg</picture>
+<pickup>true</pickup>
+<vendor>Janome</vendor>
+<model>Janome 743</model>
+<description>Электромеханическая швейная машина, освещение рабочей зоны, 3 швейные операции, полуавтоматическая обработка петли, рукавная платформа</description>
+</offer>
+<offer id="144" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=144</url>
+<price>5720</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p144.jpg</picture>
+<pickup>true</pickup>
+<vendor>AstraLux</vendor>
+<model>AstraLux SR-37</model>
+<description>Электромеханическая швейная машина, освещение рабочей зоны, 23 швейные операции, полуавтоматическая обработка петли, оверлочная строчка, рукавная платформа, отсек для аксессуаров</description>
+</offer>
+<offer id="145" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=145</url>
+<price>3886</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p145.jpg</picture>
+<pickup>true</pickup>
+<vendor>AstraLux</vendor>
+<model>AstraLux 590</model>
+<description>Электромеханическая швейная машина, освещение рабочей зоны, 11 швейных операций, полуавтоматическая обработка петли, рукавная платформа, отсек для аксессуаров</description>
+</offer>
+<offer id="146" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=146</url>
+<price>6830</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>http://shwei.ru//upload/250x250/p146.jpg</picture>
+<pickup>true</pickup>
+<vendor>Brother</vendor>
+<model>Brother M 1034D</model>
+<description>Оверлок, 3/4-ниточный шов, ролевой шов, дифференциальная подача, скорость 1300 стежков/мин, вес 7 кг</description>
+</offer>
+<offer id="147" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=147</url>
+<price>8500</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>http://shwei.ru//upload/250x250/p147.jpg</picture>
+<pickup>true</pickup>
+<vendor>Brother</vendor>
+<model>Brother M 3034D</model>
+<description>Оверлок, 3/4-ниточный шов, ролевой шов, дифференциальная подача, скорость 1300 стежков/мин, вес 5.2 кг</description>
+</offer>
+<offer id="148" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=148</url>
+<price>10100</price>
+<currencyId>RUR</currencyId>
+<categoryId>9</categoryId>
+<picture>http://shwei.ru//upload/250x250/p148.jpg</picture>
+<pickup>true</pickup>
+<vendor>Boutique</vendor>
+<model>Boutique S50</model>
+<description>Электронная швейная машина, плавная работа без вибрации, автоматическое определение размера петель, освещение рабочей зоны, 50 швейных операций, автоматическая обработка петли, оверлочная строчка</description>
+</offer>
+<offer id="149" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=149</url>
+<price>6900</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>http://shwei.ru//upload/250x250/p149.jpg</picture>
+<pickup>true</pickup>
+<vendor>Boutique</vendor>
+<model>Boutique S075D</model>
+<description>Оверлок, 3/4-ниточный шов, ролевой шов, дифференциальная подача, скорость 1500 стежков/мин, вес 7 кг</description>
+</offer>
+<offer id="153" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=153</url>
+<price>48150</price>
+<currencyId>RUR</currencyId>
+<categoryId>5</categoryId>
+<picture>http://shwei.ru//upload/250x250/p153.jpg</picture>
+<pickup>true</pickup>
+<vendor>Elna</vendor>
+<model>Elna 8600</model>
+<description>Компьютерная швейная машина, плавная работа без вибрации, вышивальный блок в комплекте, освещение рабочей зоны, 104 швейных операций, автоматическая обработка петли, оверлочная строчка</description>
+</offer>
+<offer id="154" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=154</url>
+<price>16800</price>
+<currencyId>RUR</currencyId>
+<categoryId>111</categoryId>
+<picture>http://shwei.ru//upload/250x250/p154.jpg</picture>
+<pickup>true</pickup>
+<vendor></vendor>
+<model>Дизайн-система KnittStyler</model>
+<description>Система автоматического управления процессом вязания машин Silver Reed</description>
+</offer>
+<offer id="155" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=155</url>
+<price>5700</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p155.jpg</picture>
+<pickup>true</pickup>
+<vendor>Husqvarna Viking</vendor>
+<model>Husqvarna Viking E10</model>
+<description>Электромеханическая швейная машина, освещение рабочей зоны, 21 швейная операция, полуавтоматическая обработка петли, оверлочная строчка, рукавная платформа, отсек для аксессуаров</description>
+</offer>
+<offer id="156" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=156</url>
+<price>6800</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p156.jpg</picture>
+<pickup>true</pickup>
+<vendor>Husqvarna Viking</vendor>
+<model>Husqvarna Viking E20</model>
+<description>Электромеханическая швейная машина, освещение рабочей зоны, 34 швейные операции, автоматическая обработка петли, оверлочная строчка, рукавная платформа, отсек для аксессуаров</description>
+</offer>
+<offer id="161" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=161</url>
+<price>5400</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p161.jpg</picture>
+<pickup>true</pickup>
+<vendor>Bernina</vendor>
+<model>Bernina Bernette 10</model>
+<description>Электромеханическая швейная машина, освещение рабочей зоны, 9 швейных операций, полуавтоматическая обработка петли, оверлочная строчка, рукавная платформа, отсек для аксессуаров</description>
+</offer>
+<offer id="162" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=162</url>
+<price>5670</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p162.jpg</picture>
+<pickup>true</pickup>
+<vendor>Bernina</vendor>
+<model>Bernina Bernette 12</model>
+<description>Электромеханическая швейная машина, освещение рабочей зоны, 21 швейных операций, полуавтоматическая обработка петли, оверлочная строчка, рукавная платформа, отсек для аксессуаров</description>
+</offer>
+<offer id="163" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=163</url>
+<price>6750</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p163.jpg</picture>
+<pickup>true</pickup>
+<vendor>Bernina</vendor>
+<model>Bernina Bernette 15</model>
+<description>Электромеханическая швейная машина, освещение рабочей зоны, 28 швейных операций, автоматическая обработка петли, оверлочная строчка, рукавная платформа, отсек для аксессуаров</description>
+</offer>
+<offer id="164" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=164</url>
+<price>11070</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>http://shwei.ru//upload/250x250/p164.jpg</picture>
+<pickup>true</pickup>
+<vendor>Bernina</vendor>
+<model>Bernina Bernette 20</model>
+<description>Электромеханическая швейная машина, плавная работа без вибрации, освещение рабочей зоны, 60 швейных операций, автоматическая обработка петли, оверлочная строчка, рукавная платформа</description>
+</offer>
+<offer id="165" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=165</url>
+<price>12960</price>
+<currencyId>RUR</currencyId>
+<categoryId>9</categoryId>
+<picture>http://shwei.ru//upload/250x250/p165.jpg</picture>
+<pickup>true</pickup>
+<vendor>Bernina</vendor>
+<model>Bernina Bernette 25</model>
+<description>Электронная швейная машина, плавная работа без вибрации, шитье в нескольких направлениях, освещение рабочей зоны, 155 швейных операций, автоматическая обработка петли, оверлочная строчка</description>
+</offer>
+<offer id="166" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=166</url>
+<price>24840</price>
+<currencyId>RUR</currencyId>
+<categoryId>9</categoryId>
+<picture>http://shwei.ru//upload/250x250/p166.jpg</picture>
+<pickup>true</pickup>
+<vendor>Bernina</vendor>
+<model>Bernina B 330</model>
+<description>Электронная швейная машина, 40 швейных операций, автоматическая обработка петли, оверлочная строчка, дисплей, рукавная платформа, отсек для аксессуаров</description>
+</offer>
+<offer id="167" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=167</url>
+<price>28350</price>
+<currencyId>RUR</currencyId>
+<categoryId>9</categoryId>
+<picture>http://shwei.ru//upload/250x250/p167.jpg</picture>
+<pickup>true</pickup>
+<vendor>Bernina</vendor>
+<model>Bernina B 350</model>
+<description>Электронная швейная машина, освещение рабочей зоны, 85 швейных операций, легко справляется с толстыми тканями, автоматическая обработка петли, оверлочная строчка, дисплей</description>
+</offer>
+<offer id="168" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=168</url>
+<price>29970</price>
+<currencyId>RUR</currencyId>
+<categoryId>9</categoryId>
+<picture>http://shwei.ru//upload/250x250/p168.jpg</picture>
+<pickup>true</pickup>
+<vendor>Bernina</vendor>
+<model>Bernina B 380</model>
+<description>Электронная швейная машина, освещение рабочей зоны, 115 швейных операций, автоматическая обработка петли, оверлочная строчка, дисплей, рукавная платформа</description>
+</offer>
+<offer id="169" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=169</url>
+<price>45870</price>
+<currencyId>RUR</currencyId>
+<categoryId>9</categoryId>
+<picture>http://shwei.ru//upload/250x250/p169.jpg</picture>
+<pickup>true</pickup>
+<vendor>Bernina</vendor>
+<model>Bernina B 530</model>
+<description>Электронная швейная машина, плавная работа без вибрации, освещение рабочей зоны, 148 швейных операций, легко справляется с толстыми тканями, автоматическая обработка петли, оверлочная строчка</description>
+</offer>
+<offer id="170" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=170</url>
+<price>55770</price>
+<currencyId>RUR</currencyId>
+<categoryId>7</categoryId>
+<picture>http://shwei.ru//upload/250x250/p170.jpg</picture>
+<pickup>true</pickup>
+<vendor>Bernina</vendor>
+<model>Bernina B 550 QE</model>
+<description>Компьютерная швейная машина, плавная работа без вибрации, автоматическое определение размера петель, освещение рабочей зоны, 191 швейных операций, легко справляется с толстыми тканями, автоматическая обработка петли</description>
+</offer>
+<offer id="171" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=171</url>
+<price>115170</price>
+<currencyId>RUR</currencyId>
+<categoryId>7</categoryId>
+<picture>http://shwei.ru//upload/250x250/p171.jpg</picture>
+<pickup>true</pickup>
+<vendor>Bernina</vendor>
+<model>Bernina B 580</model>
+<description>Компьютерная швейная машина, плавная работа без вибрации, вышивальный блок в комплекте, шитье в нескольких направлениях, автоматическое определение размера петель, освещение рабочей зоны, 230 швейных операций</description>
+</offer>
+<offer id="172" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=172</url>
+<price>52500</price>
+<currencyId>RUR</currencyId>
+<categoryId>7</categoryId>
+<picture>http://shwei.ru//upload/250x250/p172.jpg</picture>
+<pickup>true</pickup>
+<vendor>Bernina</vendor>
+<model>Bernina Aurora 1404</model>
+<description>Компьютерная швейная машина, плавная работа без вибрации, автоматическое определение размера петель, освещение рабочей зоны, 180 швейных операций, автоматическая обработка петли, оверлочная строчка</description>
+</offer>
+<offer id="173" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=173</url>
+<price>141500</price>
+<currencyId>RUR</currencyId>
+<categoryId>7</categoryId>
+<picture>http://shwei.ru//upload/250x250/p173.jpg</picture>
+<pickup>true</pickup>
+<vendor>Bernina</vendor>
+<model>Bernina Artista 730</model>
+<description>Компьютерная швейная машина, плавная работа без вибрации, шитье в нескольких направлениях, освещение рабочей зоны, 855 швейных операций, автоматическая обработка петли, оверлочная строчка</description>
+</offer>
+<offer id="174" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=174</url>
+<price>5490</price>
+<currencyId>RUR</currencyId>
+<categoryId>112</categoryId>
+<picture>http://shwei.ru//upload/250x250/p174.jpg</picture>
+<pickup>true</pickup>
+<vendor>Vaposteam</vendor>
+<model>Vaposteam VST 001A</model>
+<description>Данный отпариватель можно применять в магазинах одежды, в салонах штор, на швейных производствах, в гостиницах и ресторанах, больница и санаториях. Придает объем и ворсистость трикотажным изделиям, не оставляет лоснящихся,как после утюжения, пятен.</description>
+</offer>
+<offer id="175" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=175</url>
+<price>5690</price>
+<currencyId>RUR</currencyId>
+<categoryId>112</categoryId>
+<picture>http://shwei.ru//upload/250x250/p175.jpg</picture>
+<pickup>true</pickup>
+<vendor>Vaposteam</vendor>
+<model>Vaposteam VST 001W</model>
+<description>Аппарат имеет модный внешний вид, проработанную структуру, он безопасен и долговечен, его легко использовать в магазинах одежды, свадебных фотостудиях, гостиницах. Его также можно применять для утюжки, очищения, высокотемпературной обработки изделий из кожи, одежды, штор, ковров, таким образом, аппарат является хорошим помощником по хозяйству и прекрасным вариантом в качестве подарка для друзей.</description>
+</offer>
+<offer id="176" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=176</url>
+<price>5890</price>
+<currencyId>RUR</currencyId>
+<categoryId>112</categoryId>
+<picture>http://shwei.ru//upload/250x250/p176.jpg</picture>
+<pickup>true</pickup>
+<vendor>Vaposteam</vendor>
+<model>Vaposteam VST 202</model>
+<description>Отпариватель предназначен для чистки и вертикального отпаривания изделий из легких и средних тканей.Может использоваться как профессионалами, так и в бытовых условиях. При необходимости быстро разгладить вещь, Вы просто вешаете ее на плечики  и без проблем разглаживаете паром все складки и неровности!</description>
+</offer>
+<offer id="177" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=177</url>
+<price>6090</price>
+<currencyId>RUR</currencyId>
+<categoryId>112</categoryId>
+<picture>http://shwei.ru//upload/250x250/p177.jpg</picture>
+<pickup>true</pickup>
+<vendor>Vaposteam</vendor>
+<model>Vaposteam VST 202S</model>
+<description>Данный отпариватель имеет модный внешний вид и несколько расцветок. Безопасен и долговечен. Легко используется в магазинах одежды, свадебных фотостудиях, гостиницах. Применяется для утюжки, очищения или  высокотемпературной обработки изделий из кожи, одежды, ковров. Отпариватель является хорошим помощником по хозяйству. Прекрасный вариант подарка для друзей и близких!</description>
+</offer>
+<offer id="178" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=178</url>
+<price>7090</price>
+<currencyId>RUR</currencyId>
+<categoryId>112</categoryId>
+<picture>http://shwei.ru//upload/250x250/p178.jpg</picture>
+<pickup>true</pickup>
+<vendor>Vaposteam</vendor>
+<model>Vaposteam VST S205</model>
+<description>Надежный и удобный отпариватель. Поможет в работе по предпродажной подготовке одежды, сбережет внешний вид тканей, не поддающихся обычному глажению. Не оставит лоснящихся пятен и не загладит ворс. Поможет Вашей мебели и занавескам выглядеть опрятно и чисто!</description>
+</offer>
+<offer id="179" type="vendor.model" available="true">
+<url>http://shwei.ru/index.php?t=product&amp;id_product=179</url>
+<price>7490</price>
+<currencyId>RUR</currencyId>
+<categoryId>112</categoryId>
+<picture>http://shwei.ru//upload/250x250/p179.jpg</picture>
+<pickup>true</pickup>
+<vendor>Vaposteam</vendor>
+<model>Vaposteam VST SJ205</model>
+<description>Поставляется с металлической панелью и щеткой-насадкой, а так же двойной насадкой и насадкой с теплоизоляцией. Легкое перемещение, быстрое вырабатывание пара и оптимальный режим утюжки.</description>
+</offer>
+</offers>
+</shop>
+</yml_catalog>

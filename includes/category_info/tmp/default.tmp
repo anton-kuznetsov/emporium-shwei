@@ -1,0 +1,8 @@
+<div class="page-title category-title">
+	<h1><?php echo $html_title_page; ?></h1>
+</div>
+<!--
+<p class="category-image">
+	<img src="http://demo.rockettheme.com/magento/media/catalog/category/camera.jpg" alt="Cameras" title="Cameras" />
+</p>
+-->

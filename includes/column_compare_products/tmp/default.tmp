@@ -1,0 +1,8 @@
+<div class="block block-compare">
+	<div class="block-title">
+		<strong><span><span class="color">Сравнение</span> товаров</span></strong>
+	</div>
+	<div class="block-content">
+		<p class="empty">У вас нет товаров для сравнения.</p>
+	</div>
+</div>

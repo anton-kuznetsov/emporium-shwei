@@ -1,0 +1,123 @@
+<div class="header">        
+	<div class="inner-header-container">                
+		<h1 class="logo"><strong>Shwei.Ru</strong>
+			<a href="<?php echo $site_root; ?>" title="Shwei.Ru" class="logo">
+				<img src="<?php echo $site_root; ?>images/logo.png" alt="Shwei.Ru" /></a></h1>
+				                
+<script type="text/javascript">
+
+	var $j = jQuery.noConflict();
+    $j(document).ready( function() {
+        $j(document).magemenus({
+            mm_trigger: "ul.menu-single",
+            mm_slidedownspeed: 100,                 // Наборы сползают вниз скорость 2-го уровня выпадающего
+			mm_fadeoutspeed: 50,                    // Наборы исчезать скорость 2-го уровня выпадающего 
+			mm_css_pre: {left: 100, opacity: 0 },   // Устанавливает позицию 3-го уровня выпадающих перед видно
+			mm_animatein: {left: 165, opacity: 1},  // Определяет анимации для 3-го уровня выпадающих вступления в просмотр
+			mm_animateout: {opacity: 0, left: 185}, // Определяет анимации для 3-го уровня выпадающих выходить зрения
+			mm_animate_speed: 150,                  // Общая скорость анимации 
+			mm_pause: 0                             // Устанавливает паузу перед выпадающего меню отступает на MouseOut
+		});
+    });
+    
+</script>
+
+		<div id="box">
+			<div class="head"></div>
+		</div>
+		<ul id="magemenu-top" class="menu-single">        
+			<li class="level0 <?php echo ( $_REQUEST['t'] ? '' : 'active' ); ?>">
+				<a href="<?php echo $site_root; ?>index.php">Магазин</a>
+			</li>
+			<li class="level0 parent <?php
+
+	$product_dalc = new Product_DALC();
+	$category_dalc = new Category_DALC();
+	$root_category = NULL;
+
+	if ( $_REQUEST['t'] == 'product' ) {
+		$product = $product_dalc->GetProduct( $_REQUEST['id_product'] );
+		$pcs = $product_dalc->SQL_SelectList('products_and_categories', NULL, ' id_product = '.$_REQUEST['id_product'] );
+		foreach ( $pcs as $pc ) {
+			$root_category = $category_dalc->GetRootCategory( $pc['id_category'] );
+			break;
+		}
+	} else if ( $_REQUEST['t'] == 'category' ) {
+		$root_category = $category_dalc->GetRootCategory( $_REQUEST['id_category'] );
+	}
+
+	if ( is_null($root_category) ) {
+		echo '';
+	} else if ( $root_category['id'] == 100 ) {
+		echo 'active';
+	}
+
+?>">
+				<a href="<?php echo CategoryProducts_UI::href(array('id_category' => 100), 1); ?>">
+				<span>Машинки</span></a>
+				<ul class="level0">
+					<li class="level1 parent">
+						<a href="<?php echo CategoryProducts_UI::href(array('id_category' => 1), 1); ?>"><span>Швейные</span></a>
+						<ul class="level1">
+							<li class="level2">
+								<a href="<?php echo CategoryProducts_UI::href(array('id_category' => 6), 1); ?>"><span>Распошивальные</span></a>
+							</li>
+							<li class="level2">
+								<a href="<?php echo CategoryProducts_UI::href(array('id_category' => 7), 1); ?>"><span>Компьютерные</span></a>
+							</li>
+							<li class="level2">
+								<a href="<?php echo CategoryProducts_UI::href(array('id_category' => 8), 1); ?>"><span>Механические</span></a>
+							</li>
+							<li class="level2 last">
+								<a href="<?php echo CategoryProducts_UI::href(array('id_category' => 9), 1); ?>"><span>Электронные</span></a>
+							</li>
+						</ul>
+					</li>
+					<li class="level1 parent">
+						<a href="<?php echo CategoryProducts_UI::href(array('id_category' => 2), 1); ?>"><span>Вязальные</span></a>
+						<ul class="level1">
+							<li class="level2">
+								<a href="<?php echo CategoryProducts_UI::href(array('id_category' => 10), 1); ?>"><span>Механические</span></a>
+							</li>
+							<li class="level2 last">
+								<a href="<?php echo CategoryProducts_UI::href(array('id_category' => 11), 1); ?>"><span>Электронные</span></a>
+							</li>
+						</ul>
+					</li>
+					<li class="level1">
+						<a href="<?php echo CategoryProducts_UI::href(array('id_category' => 3), 1); ?>"><span>Вышивальные</span></a>
+					</li>
+					<li class="level1">
+						<a href="<?php echo CategoryProducts_UI::href(array('id_category' => 4), 1); ?>"><span>Оверлоки</span></a>
+					</li>
+					<li class="level1">
+						<a href="<?php echo CategoryProducts_UI::href(array('id_category' => 5), 1); ?>"><span>Швейно-вышивальные</span></a>
+					</li>
+				</ul>
+			</li>
+			<li class="level0 <?php
+
+	if ( is_null($root_category) ) {
+		echo '';
+	} else if ( $root_category['id'] == 101 ) {
+		echo 'active';
+	}
+
+?>">
+				<a href="<?php echo CategoryProducts_UI::href(array('id_category' => 101), 1); ?>"><span>Аксессуары</span></a>
+			</li>
+			<li class="level0 <?php echo ( $_REQUEST['t'] == 'page' && $_REQUEST['label'] == 'service' ? 'active' : '' ); ?>">
+				<a href="<?php echo $site_root; ?>articles/service.html"><span>Сервис</span></a>
+			</li>
+			<li class="level0 <?php echo ( $_REQUEST['t'] == 'page' && $_REQUEST['label'] == 'delivery' ? 'active' : '' ); ?>">
+				<a href="<?php echo $site_root; ?>articles/delivery.html"><span>Доставка</span></a>
+			</li>
+			<li class="level0 <?php echo ( $_REQUEST['t'] == 'page' && $_REQUEST['label'] == 'payment' ? 'active' : '' ); ?>">
+				<a href="<?php echo $site_root; ?>articles/payment.html"><span>Оплата</span></a>
+			</li>        
+			<li class="level0 <?php echo ( $_REQUEST['t'] == 'page' && $_REQUEST['label'] == 'contact' ? 'active' : '' ); ?>">
+				<a href="<?php echo $site_root; ?>articles/contact.html"><span>Контакты</span></a>
+			</li>
+		</ul>                
+	</div>    
+</div>

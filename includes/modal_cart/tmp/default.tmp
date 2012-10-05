@@ -1,0 +1,10 @@
+<div class="rokmage-cart-box-container">
+	<a href='<?php ShopingCart_UI::href(); ?>'>Корзина</a>
+<?php
+	if ( $data['qty'] > 0 ) {
+?>
+	(<span class="big"><?php echo $data['subtotal_str']; ?></span><span class="items-checkout">)</span>
+<?php
+	}
+?>
+</div>

@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /adminka/
+Disallow: /backup_o/
+Disallow: /banners/
+Disallow: /captcha/
+Disallow: /css/
+Disallow: /images/
+Disallow: /includes/
+Disallow: /js/
+Disallow: /upload/
+Disallow: /comment.php
+Disallow: /list.php
+Disallow: /photo.php
+Disallow: /search.php

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- 
+IMAGE TRANSITION="1-9" 1-9 FOR EFFECT
+SET THE NUMBER TO "0" FOR RANDOM EFFECT
+RSS PAUSE - This is the the time between image effects. 1000 = 1 second, 2 = 2 seconds etc...
+ -->
+<RSS PAUSE="6000">
+	<IMAGE TRANSITION="2">upload/flash/overlock-boutique-01.jpg</IMAGE>
+	<IMAGE TRANSITION="9">upload/flash/overlock-boutique-02.jpg</IMAGE>
+	<IMAGE TRANSITION="6">upload/flash/overlock-boutique-03.jpg</IMAGE>
+</RSS>

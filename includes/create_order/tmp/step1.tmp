@@ -1,0 +1,47 @@
+<div class="product-view order-view">     	
+	<div class="page-title">
+		<h1><span class="color">Оформление заказа</span></h1>
+	</div>
+	<div id="reviews" class="tab_content">
+		<form action="<?php CreateOrder_UI::href( array( 'action' => 'step1_next' ), 0, 0 ); ?>" method="post" id="save-order-form">
+			<div class="form-add">
+				<ul class="form-list">
+					<li>
+						<label for="nickname_field" class="required"><em>*</em>ФИО</label>
+						<div class="input-box">
+							<input type="text" name="fio" id="fio_field" class="input-text required-entry" value="<?php echo $data['fio']; ?>" />
+						</div>
+					</li>
+					<li>
+						<label for="summary_field" class="required"><em>*</em>E-mail</label>
+						<div class="input-box">
+							<input type="text" name="email" id="email_field" class="input-text required-entry validate-email" value="<?php echo $data['email']; ?>" />
+						</div>
+					</li>
+					<li>
+						<label for="review_field" class="required"><em>*</em>Телефон</label>
+						<div class="input-box">
+							<input type="text" name="phone" id="phone_field" class="input-text required-entry" value="<?php echo $data['phone']; ?>" />
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="buttons-set">
+				<button type="submit" title="Далее" class="button">
+					<span><span>Далее</span></span>
+				</button>
+			</div>
+		</form>
+	</div>
+
+	<script type="text/javascript">
+
+        //<![CDATA[
+
+        var dataForm = new VarienForm('save-order-form', true);
+
+        //]]>
+
+    </script>     	
+
+</div>

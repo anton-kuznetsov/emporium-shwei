@@ -1,0 +1,28 @@
+<script type="text/javascript">
+
+	var $j = jQuery.noConflict();
+
+	// Truncate
+	$j(function() {
+		$j('.footer_truncate').truncate({max_length: 22});
+	});
+
+</script>
+
+<div class="rokmage-footer-inner-panel">
+	<h3><span class="color">Новинки</span></h3>
+	<ul>
+<?php
+
+	foreach ($data as $item) {
+
+?>
+		<li class="footer_truncate">
+			<a href="<?php Product_UI::href(array( 'id_product' => $item['id'] )); ?>" title="<?php echo $item['label']; ?>"><?php echo $item['label']; ?></a></li>
+<?php
+
+	}
+
+?>
+    </ul>
+</div>
