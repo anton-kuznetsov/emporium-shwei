@@ -5,4 +5,24 @@
 	<p>Заказ принят. В ближайшее время с Вами свяжется менеджер по работе с клиентами.</p>
 	<p>По указанному электронному адресу отправлено письмо, содержащее детали заказа.</p>
 	<p>Перейдите по <a href="<?php echo $site_root; ?>">ссылке</a> для продолжения покупок.</p>
+	<div class="buttons-set">
+<?php
+	
+			$inv_id = $data['id'];
+
+			$inv_desc  = "desc";
+			$out_summ  = $data['total'];
+
+			$crc = md5("$robocassa_login:$out_summ:$inv_id:$robocassa_pass1");
+
+			$url_robocassa = 'http://test.robokassa.ru/Index.aspx' . //https://merchant.roboxchange.com/Index.aspx' .
+				'?MrchLogin=' . $robocassa_login .
+				'&OutSum=' . $out_summ .
+				'&InvId=' . $inv_id .
+				'&Desc=' . $inv_desc .
+				'&SignatureValue=' . $crc;
+
+?>
+		<button class="button" onclick="setLocation('<?php echo $url_robocassa; ?>')"><span><span>Оплатить</span></span></button>
+	</div>
 </div>

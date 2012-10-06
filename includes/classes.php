@@ -280,4 +280,11 @@
 
 	require_once "dalc/global.php";
 
+	// Robocassa
+
+	require_once "fail_payment/FailPayment_BLLC.php";
+	require_once "fail_payment/FailPayment_UI.php";
+	require_once "success_payment/SuccessPayment_BLLC.php";
+	require_once "success_payment/SuccessPayment_UI.php";
+
 ?>

@@ -22,7 +22,7 @@
 
 	$orders_qty = $order_dalc->Count();
 
-	$orders = $order_dalc->GetItemsLimit(array("fio", "email", "phone", "dt"), $where, $start, $limit);
+	$orders = $order_dalc->GetItemsLimit(array("fio", "email", "phone", "dt", "amount_received"), $where, $start, $limit);
 
 	$array = array();
 

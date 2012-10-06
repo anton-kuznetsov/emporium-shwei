@@ -36,6 +36,8 @@ class CreateOrder_UI extends UI {
 	public function render() {
 
 		global $site_root;
+		global $robocassa_login;
+		global $robocassa_pass1;
 
 		$data = array ();
 

@@ -64,6 +64,39 @@ class CreateOrder_BLLC {
 
 	}
 
+	//--------------------------------------------------------------------------
+	// 
+
+	public function GetOrderData( $id_order ) {
+
+		global $month_rus;
+
+		$data = array();
+
+		$order_dalc = new Order_DALC();
+
+		$data = $order_dalc->GetOrder( $id_order );
+
+		//
+
+		$data['order_items'] = $order_dalc->GetOrderItems( $id_order );
+
+		foreach ( $data['order_items'] as $item ) {
+
+			$data['total'] += $item['subtotal'];
+
+		}
+
+		//
+
+		$managers_dalc = new Managers_DALC();
+
+		$data['client_manager'] = $managers_dalc->GetActiveClientManager();
+
+		return $data;
+
+	}
+
 };
 
 ?>

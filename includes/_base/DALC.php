@@ -1,60 +1,33 @@
 <?php
 
-
-
 class DALC {
 
-
-
 	// Параметры доступа к БД
-
 	// логин
-
 	private $db_login = 'root';
-
 	// пароль
-
 	private $db_pass = '';
-
 	// имя хоста
-
 	private $db_host = 'localhost';
-
 	// имя базы данных
-
 	private $db_name = 'shwei';
-
-
 
 	// 
 
 	protected $db = NULL;
 
-
-
 	// Физическое расположение файла класса
 
 	protected $folder_class = '';
 
-
-
 	//--------------------------------------------------------------------------
-
 	// Конструктор
-
-
 
 	function __construct() {
 
-
-
 		global $folder_root;
 
-
-
 		$this->folder_class = $folder_root . '/includes/_base/';
-
-
 
 		$this->db = mysql_connect($this->db_host, $this->db_login, $this->db_pass);
 
@@ -62,14 +35,9 @@ class DALC {
 
 		mysql_query('SET NAMES utf8');
 
-
-
 	}
 
-
-
 	//--------------------------------------------------------------------------
-
 	// Получение списка записей из таблицы
 
 

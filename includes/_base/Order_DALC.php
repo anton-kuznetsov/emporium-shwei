@@ -118,6 +118,24 @@ class Order_DALC extends DALC {
 
 	}
 
+	//--------------------------------------------------------------------------
+	//
+
+	public function Paying( $id, $sum ) {
+
+		$item = array();
+
+		$item['id'] = $id;
+		$item['amount_received'] = $sum;
+
+		$this->SQL_UpdateItems(
+			'orders',
+			array( $item ),
+			array( 'amount_received' )
+		);
+
+	}
+
 };
 
 ?>

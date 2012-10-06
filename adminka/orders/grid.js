@@ -27,6 +27,9 @@ grid.model = Ext.define (
 			},
 			{
 				name: 'total'
+			},
+			{
+				name: 'amount_received'
 			}
 	    ]
 	}
@@ -93,6 +96,13 @@ grid.panel = Ext.create(
 				align: 'right',
 				dataIndex: 'total',
 				text: 'Сумма'
+			},
+			{
+				xtype: 'numbercolumn',
+				width: 100,
+				align: 'right',
+				dataIndex: 'amount_received',
+				text: 'Оплачено'
 			},
 			{
 				xtype: 'gridcolumn',
